@@ -1,0 +1,3580 @@
+Request method:	GET
+Request URI:	https://listing-service-au.c24.tech/v1/vehicle?size=20&page=0
+Proxy:			<none>
+Request params:	<none>
+Query params:	size=20
+				page=0
+Form params:	<none>
+Path params:	<none>
+Headers:		x_country=AU
+				x_vehicle_type=CAR
+				authority=listing-service-au.c24.tech
+				accept=application/json, text/plain, */*
+				accept-language=en-GB,en-US;q=0.9,en;q=0.8
+				Connection=keep-alive
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Wed, 28 Jun 2023 19:07:51 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+x-content-type-options: nosniff
+x-xss-protection: 1; mode=block
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
+expires: 0
+strict-transport-security: max-age=31536000 ; includeSubDomains
+x-frame-options: DENY
+x-envoy-upstream-service-time: 428
+CF-Cache-Status: DYNAMIC
+Set-Cookie: __cf_bm=XYCeAqEykixSVxm1xgZLBFtjU71aIh2uooIeUhor5Sg-1687979271-0-AdpUIHfC/X9LBLHBvqXVAYt03q7KISMeljWp+OuD9EU2pNcUbQ2KcmgqLRz+0tUalrvKzBcUMQFJriKQSBWNRGo=; path=/; expires=Wed, 28-Jun-23 19:37:51 GMT; domain=.c24.tech; HttpOnly; Secure; SameSite=None
+Server: cloudflare
+CF-RAY: 7de8370df8001c55-DEL
+Content-Encoding: gzip
+
+{
+    "total": 663,
+    "facets": {
+        "bodyType": {
+            "name": "bodyType",
+            "type": "TERMS",
+            "displayName": "BODY TYPE",
+            "mainFilter": true,
+            "filterType": "sf",
+            "enabledForSeo": true,
+            "buckets": [
+                {
+                    "name": "Cab Chassis",
+                    "count": 6
+                },
+                {
+                    "name": "Convertible",
+                    "count": 4
+                },
+                {
+                    "name": "Coupe",
+                    "count": 13
+                },
+                {
+                    "name": "Hatchback",
+                    "count": 152
+                },
+                {
+                    "name": "SUV",
+                    "count": 363
+                },
+                {
+                    "name": "Sedan",
+                    "count": 60
+                },
+                {
+                    "name": "Ute",
+                    "count": 37
+                },
+                {
+                    "name": "Wagon",
+                    "count": 28
+                }
+            ]
+        },
+        "odometerReading": {
+            "name": "odometerReading",
+            "type": "STATS",
+            "displayName": "KMs",
+            "mainFilter": true,
+            "filterType": "rf",
+            "enabledForSeo": false,
+            "min": 4572.0,
+            "max": 226000.0,
+            "stepRate": 1000.0
+        },
+        "imperfectionCount": {
+            "name": "imperfectionCount",
+            "type": "TERMS",
+            "displayName": "IMPERFECTIONS & SAFETY",
+            "mainFilter": true,
+            "filterType": "sf",
+            "enabledForSeo": false,
+            "groupName": "safetyAndQuality",
+            "buckets": [
+                {
+                    "name": "None",
+                    "count": 205
+                },
+                {
+                    "name": "Below 3",
+                    "count": 211
+                }
+            ]
+        },
+        "year": {
+            "name": "year",
+            "type": "STATS",
+            "displayName": "YEAR",
+            "mainFilter": true,
+            "filterType": "rf",
+            "enabledForSeo": false,
+            "min": 2011.0,
+            "max": 2022.0,
+            "stepRate": 1.0
+        },
+        "driveType": {
+            "name": "driveType",
+            "type": "TERMS",
+            "displayName": "DRIVETRAIN",
+            "mainFilter": true,
+            "filterType": "sf",
+            "enabledForSeo": false,
+            "buckets": [
+                {
+                    "name": "4x2",
+                    "count": 2
+                },
+                {
+                    "name": "4x4",
+                    "count": 54
+                },
+                {
+                    "name": "All Wheel Drive",
+                    "count": 175
+                },
+                {
+                    "name": "Four Wheel Drive",
+                    "count": 12
+                },
+                {
+                    "name": "Front Wheel Drive",
+                    "count": 371
+                },
+                {
+                    "name": "Rear Wheel Drive",
+                    "count": 49
+                }
+            ]
+        },
+        "kbbDiff": {
+            "name": "kbbDiff",
+            "type": "SCRIPT",
+            "displayName": "KBB Discount",
+            "mainFilter": true,
+            "filterType": "sf",
+            "enabledForSeo": false,
+            "buckets": [
+                {
+                    "name": "false",
+                    "count": 222
+                },
+                {
+                    "name": "true",
+                    "count": 441
+                }
+            ]
+        },
+        "seats": {
+            "name": "seats",
+            "type": "TERMS",
+            "displayName": "SEATS",
+            "mainFilter": true,
+            "filterType": "sf",
+            "enabledForSeo": false,
+            "buckets": [
+                {
+                    "name": "2",
+                    "count": 2
+                },
+                {
+                    "name": "4",
+                    "count": 25
+                },
+                {
+                    "name": "5",
+                    "count": 560
+                },
+                {
+                    "name": "7",
+                    "count": 75
+                },
+                {
+                    "name": "8",
+                    "count": 1
+                }
+            ]
+        },
+        "quotedPrice": {
+            "name": "quotedPrice",
+            "type": "STATS",
+            "displayName": "PRICE",
+            "mainFilter": true,
+            "filterType": "rf",
+            "enabledForSeo": true,
+            "min": 7990.0,
+            "max": 61750.0,
+            "stepRate": 250.0
+        },
+        "features": {
+            "name": "features",
+            "type": "TERMS",
+            "displayName": "FEATURES",
+            "mainFilter": true,
+            "filterType": "sf",
+            "enabledForSeo": false,
+            "buckets": [
+                {
+                    "name": "Android Auto",
+                    "count": 235
+                },
+                {
+                    "name": "Blind spot monitoring",
+                    "count": 87
+                },
+                {
+                    "name": "Leather seats",
+                    "count": 208
+                },
+                {
+                    "name": "Navigation/GPS",
+                    "count": 299
+                },
+                {
+                    "name": "Park assist",
+                    "count": 120
+                },
+                {
+                    "name": "Reversing camera",
+                    "count": 547
+                },
+                {
+                    "name": "Roof racks",
+                    "count": 2
+                },
+                {
+                    "name": "Roof rails",
+                    "count": 255
+                },
+                {
+                    "name": "Sunroof",
+                    "count": 80
+                }
+            ]
+        },
+        "ancapRating": {
+            "name": "ancapRating",
+            "type": "RANGE",
+            "displayName": "IMPERFECTIONS & SAFETY",
+            "mainFilter": true,
+            "filterType": "rf",
+            "enabledForSeo": false,
+            "buckets": [
+                {
+                    "name": "3 & above",
+                    "count": 601,
+                    "from": 3.0,
+                    "to": 6.0
+                },
+                {
+                    "name": "4 & above",
+                    "count": 601,
+                    "from": 4.0,
+                    "to": 6.0
+                },
+                {
+                    "name": "5",
+                    "count": 570,
+                    "from": 5.0,
+                    "to": 6.0
+                }
+            ],
+            "min": 0,
+            "max": 0,
+            "stepRate": 0
+        },
+        "fuelType": {
+            "name": "fuelType",
+            "type": "TERMS",
+            "displayName": "FUEL TYPE",
+            "mainFilter": true,
+            "filterType": "sf",
+            "enabledForSeo": true,
+            "buckets": [
+                {
+                    "name": "Diesel",
+                    "count": 146
+                },
+                {
+                    "name": "Hybrid",
+                    "count": 18
+                },
+                {
+                    "name": "Petrol",
+                    "count": 499
+                }
+            ]
+        },
+        "comingSoon": {
+            "name": "comingSoon",
+            "type": "TERMS",
+            "displayName": "Coming Soon",
+            "mainFilter": true,
+            "filterType": "sf",
+            "enabledForSeo": false,
+            "buckets": [
+                {
+                    "name": "false",
+                    "count": 663
+                }
+            ]
+        },
+        "transmissionType": {
+            "name": "transmissionType",
+            "type": "TERMS",
+            "displayName": "TRANSMISSION",
+            "mainFilter": true,
+            "filterType": "sf",
+            "enabledForSeo": true,
+            "buckets": [
+                {
+                    "name": "Automatic",
+                    "count": 611
+                },
+                {
+                    "name": "Manual",
+                    "count": 52
+                }
+            ]
+        },
+        "make": {
+            "name": "make",
+            "type": "TERMS",
+            "displayName": "MAKE/MODEL",
+            "mainFilter": true,
+            "filterType": "sf",
+            "enabledForSeo": true,
+            "buckets": [
+                {
+                    "name": "Alfa Romeo",
+                    "count": 1,
+                    "subFacet": {
+                        "name": "model",
+                        "type": "TERMS",
+                        "mainFilter": false,
+                        "filterType": "sf",
+                        "enabledForSeo": true,
+                        "buckets": [
+                            {
+                                "name": "Stelvio",
+                                "count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Audi",
+                    "count": 31,
+                    "subFacet": {
+                        "name": "model",
+                        "type": "TERMS",
+                        "mainFilter": false,
+                        "filterType": "sf",
+                        "enabledForSeo": true,
+                        "buckets": [
+                            {
+                                "name": "A1",
+                                "count": 3
+                            },
+                            {
+                                "name": "A3",
+                                "count": 3
+                            },
+                            {
+                                "name": "A4",
+                                "count": 2
+                            },
+                            {
+                                "name": "A5",
+                                "count": 6
+                            },
+                            {
+                                "name": "Q2",
+                                "count": 2
+                            },
+                            {
+                                "name": "Q3",
+                                "count": 4
+                            },
+                            {
+                                "name": "Q5",
+                                "count": 5
+                            },
+                            {
+                                "name": "Q7",
+                                "count": 2
+                            },
+                            {
+                                "name": "S1",
+                                "count": 1
+                            },
+                            {
+                                "name": "S3",
+                                "count": 2
+                            },
+                            {
+                                "name": "Sq5",
+                                "count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "BMW",
+                    "count": 19,
+                    "subFacet": {
+                        "name": "model",
+                        "type": "TERMS",
+                        "mainFilter": false,
+                        "filterType": "sf",
+                        "enabledForSeo": true,
+                        "buckets": [
+                            {
+                                "name": "2",
+                                "count": 3
+                            },
+                            {
+                                "name": "3",
+                                "count": 3
+                            },
+                            {
+                                "name": "4",
+                                "count": 3
+                            },
+                            {
+                                "name": "5",
+                                "count": 4
+                            },
+                            {
+                                "name": "X1",
+                                "count": 2
+                            },
+                            {
+                                "name": "X3",
+                                "count": 2
+                            },
+                            {
+                                "name": "X4",
+                                "count": 2
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Chrysler",
+                    "count": 2,
+                    "subFacet": {
+                        "name": "model",
+                        "type": "TERMS",
+                        "mainFilter": false,
+                        "filterType": "sf",
+                        "enabledForSeo": true,
+                        "buckets": [
+                            {
+                                "name": "300",
+                                "count": 1
+                            },
+                            {
+                                "name": "300 C",
+                                "count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Fiat",
+                    "count": 1,
+                    "subFacet": {
+                        "name": "model",
+                        "type": "TERMS",
+                        "mainFilter": false,
+                        "filterType": "sf",
+                        "enabledForSeo": true,
+                        "buckets": [
+                            {
+                                "name": "Freemont",
+                                "count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Ford",
+                    "count": 19,
+                    "subFacet": {
+                        "name": "model",
+                        "type": "TERMS",
+                        "mainFilter": false,
+                        "filterType": "sf",
+                        "enabledForSeo": true,
+                        "buckets": [
+                            {
+                                "name": "Ecosport",
+                                "count": 2
+                            },
+                            {
+                                "name": "Escape",
+                                "count": 1
+                            },
+                            {
+                                "name": "Everest",
+                                "count": 3
+                            },
+                            {
+                                "name": "Falcon",
+                                "count": 1
+                            },
+                            {
+                                "name": "Fiesta",
+                                "count": 1
+                            },
+                            {
+                                "name": "Mondeo",
+                                "count": 1
+                            },
+                            {
+                                "name": "Ranger",
+                                "count": 10
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Holden",
+                    "count": 37,
+                    "subFacet": {
+                        "name": "model",
+                        "type": "TERMS",
+                        "mainFilter": false,
+                        "filterType": "sf",
+                        "enabledForSeo": true,
+                        "buckets": [
+                            {
+                                "name": "Astra",
+                                "count": 2
+                            },
+                            {
+                                "name": "Barina",
+                                "count": 1
+                            },
+                            {
+                                "name": "Calais",
+                                "count": 1
+                            },
+                            {
+                                "name": "Caprice",
+                                "count": 1
+                            },
+                            {
+                                "name": "Captiva",
+                                "count": 5
+                            },
+                            {
+                                "name": "Cascada",
+                                "count": 1
+                            },
+                            {
+                                "name": "Colorado",
+                                "count": 10
+                            },
+                            {
+                                "name": "Colorado 7",
+                                "count": 1
+                            },
+                            {
+                                "name": "Commodore",
+                                "count": 7
+                            },
+                            {
+                                "name": "Cruze",
+                                "count": 1
+                            },
+                            {
+                                "name": "Trailblazer",
+                                "count": 2
+                            },
+                            {
+                                "name": "Trax",
+                                "count": 5
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Honda",
+                    "count": 14,
+                    "subFacet": {
+                        "name": "model",
+                        "type": "TERMS",
+                        "mainFilter": false,
+                        "filterType": "sf",
+                        "enabledForSeo": true,
+                        "buckets": [
+                            {
+                                "name": "CR-V",
+                                "count": 4
+                            },
+                            {
+                                "name": "Civic",
+                                "count": 1
+                            },
+                            {
+                                "name": "HR-V",
+                                "count": 8
+                            },
+                            {
+                                "name": "Odyssey",
+                                "count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Hyundai",
+                    "count": 66,
+                    "subFacet": {
+                        "name": "model",
+                        "type": "TERMS",
+                        "mainFilter": false,
+                        "filterType": "sf",
+                        "enabledForSeo": true,
+                        "buckets": [
+                            {
+                                "name": "Accent",
+                                "count": 2
+                            },
+                            {
+                                "name": "Elantra",
+                                "count": 1
+                            },
+                            {
+                                "name": "Genesis",
+                                "count": 1
+                            },
+                            {
+                                "name": "Ix35",
+                                "count": 6
+                            },
+                            {
+                                "name": "Kona",
+                                "count": 10
+                            },
+                            {
+                                "name": "Santa Fe",
+                                "count": 10
+                            },
+                            {
+                                "name": "Tucson",
+                                "count": 9
+                            },
+                            {
+                                "name": "Veloster",
+                                "count": 2
+                            },
+                            {
+                                "name": "i30",
+                                "count": 25
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Infiniti",
+                    "count": 3,
+                    "subFacet": {
+                        "name": "model",
+                        "type": "TERMS",
+                        "mainFilter": false,
+                        "filterType": "sf",
+                        "enabledForSeo": true,
+                        "buckets": [
+                            {
+                                "name": "Q30",
+                                "count": 1
+                            },
+                            {
+                                "name": "Q50",
+                                "count": 2
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Isuzu",
+                    "count": 2,
+                    "subFacet": {
+                        "name": "model",
+                        "type": "TERMS",
+                        "mainFilter": false,
+                        "filterType": "sf",
+                        "enabledForSeo": true,
+                        "buckets": [
+                            {
+                                "name": "D-MAX",
+                                "count": 1
+                            },
+                            {
+                                "name": "MU-X",
+                                "count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Jaguar",
+                    "count": 5,
+                    "subFacet": {
+                        "name": "model",
+                        "type": "TERMS",
+                        "mainFilter": false,
+                        "filterType": "sf",
+                        "enabledForSeo": true,
+                        "buckets": [
+                            {
+                                "name": "E-pace",
+                                "count": 1
+                            },
+                            {
+                                "name": "F-PACE",
+                                "count": 3
+                            },
+                            {
+                                "name": "XF",
+                                "count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Jeep",
+                    "count": 11,
+                    "subFacet": {
+                        "name": "model",
+                        "type": "TERMS",
+                        "mainFilter": false,
+                        "filterType": "sf",
+                        "enabledForSeo": true,
+                        "buckets": [
+                            {
+                                "name": "Compass",
+                                "count": 1
+                            },
+                            {
+                                "name": "Grand Cherokee",
+                                "count": 3
+                            },
+                            {
+                                "name": "Renegade",
+                                "count": 2
+                            },
+                            {
+                                "name": "Wrangler",
+                                "count": 3
+                            },
+                            {
+                                "name": "Wrangler Unlimited",
+                                "count": 2
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Kia",
+                    "count": 60,
+                    "subFacet": {
+                        "name": "model",
+                        "type": "TERMS",
+                        "mainFilter": false,
+                        "filterType": "sf",
+                        "enabledForSeo": true,
+                        "buckets": [
+                            {
+                                "name": "Carnival",
+                                "count": 1
+                            },
+                            {
+                                "name": "Cerato",
+                                "count": 20
+                            },
+                            {
+                                "name": "Picanto",
+                                "count": 3
+                            },
+                            {
+                                "name": "Rio",
+                                "count": 6
+                            },
+                            {
+                                "name": "Seltos",
+                                "count": 2
+                            },
+                            {
+                                "name": "Sorento",
+                                "count": 5
+                            },
+                            {
+                                "name": "Sportage",
+                                "count": 21
+                            },
+                            {
+                                "name": "Stinger",
+                                "count": 1
+                            },
+                            {
+                                "name": "Stonic",
+                                "count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Land Rover",
+                    "count": 12,
+                    "subFacet": {
+                        "name": "model",
+                        "type": "TERMS",
+                        "mainFilter": false,
+                        "filterType": "sf",
+                        "enabledForSeo": true,
+                        "buckets": [
+                            {
+                                "name": "Discovery",
+                                "count": 1
+                            },
+                            {
+                                "name": "Discovery Sport",
+                                "count": 11
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Lexus",
+                    "count": 4,
+                    "subFacet": {
+                        "name": "model",
+                        "type": "TERMS",
+                        "mainFilter": false,
+                        "filterType": "sf",
+                        "enabledForSeo": true,
+                        "buckets": [
+                            {
+                                "name": "Gs450h",
+                                "count": 1
+                            },
+                            {
+                                "name": "Is300h",
+                                "count": 1
+                            },
+                            {
+                                "name": "Nx300",
+                                "count": 1
+                            },
+                            {
+                                "name": "Rx350",
+                                "count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "MG",
+                    "count": 4,
+                    "subFacet": {
+                        "name": "model",
+                        "type": "TERMS",
+                        "mainFilter": false,
+                        "filterType": "sf",
+                        "enabledForSeo": true,
+                        "buckets": [
+                            {
+                                "name": "Mg3 Auto",
+                                "count": 2
+                            },
+                            {
+                                "name": "ZS",
+                                "count": 2
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "MINI",
+                    "count": 3,
+                    "subFacet": {
+                        "name": "model",
+                        "type": "TERMS",
+                        "mainFilter": false,
+                        "filterType": "sf",
+                        "enabledForSeo": true,
+                        "buckets": [
+                            {
+                                "name": "Cooper",
+                                "count": 3
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Mazda",
+                    "count": 51,
+                    "subFacet": {
+                        "name": "model",
+                        "type": "TERMS",
+                        "mainFilter": false,
+                        "filterType": "sf",
+                        "enabledForSeo": true,
+                        "buckets": [
+                            {
+                                "name": "2",
+                                "count": 1
+                            },
+                            {
+                                "name": "3",
+                                "count": 11
+                            },
+                            {
+                                "name": "6",
+                                "count": 1
+                            },
+                            {
+                                "name": "BT-50",
+                                "count": 3
+                            },
+                            {
+                                "name": "CX-3",
+                                "count": 7
+                            },
+                            {
+                                "name": "CX-5",
+                                "count": 21
+                            },
+                            {
+                                "name": "CX-9",
+                                "count": 7
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Mercedes-benz",
+                    "count": 39,
+                    "subFacet": {
+                        "name": "model",
+                        "type": "TERMS",
+                        "mainFilter": false,
+                        "filterType": "sf",
+                        "enabledForSeo": true,
+                        "buckets": [
+                            {
+                                "name": "A-class",
+                                "count": 1
+                            },
+                            {
+                                "name": "A200",
+                                "count": 4
+                            },
+                            {
+                                "name": "A250",
+                                "count": 3
+                            },
+                            {
+                                "name": "B180",
+                                "count": 2
+                            },
+                            {
+                                "name": "C180",
+                                "count": 1
+                            },
+                            {
+                                "name": "C200",
+                                "count": 2
+                            },
+                            {
+                                "name": "C250",
+                                "count": 1
+                            },
+                            {
+                                "name": "CLA",
+                                "count": 5
+                            },
+                            {
+                                "name": "CLS",
+                                "count": 2
+                            },
+                            {
+                                "name": "E220",
+                                "count": 1
+                            },
+                            {
+                                "name": "E250",
+                                "count": 1
+                            },
+                            {
+                                "name": "E400",
+                                "count": 1
+                            },
+                            {
+                                "name": "GLA",
+                                "count": 10
+                            },
+                            {
+                                "name": "GLC",
+                                "count": 2
+                            },
+                            {
+                                "name": "GLE",
+                                "count": 2
+                            },
+                            {
+                                "name": "S350",
+                                "count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Mitsubishi",
+                    "count": 65,
+                    "subFacet": {
+                        "name": "model",
+                        "type": "TERMS",
+                        "mainFilter": false,
+                        "filterType": "sf",
+                        "enabledForSeo": true,
+                        "buckets": [
+                            {
+                                "name": "ASX",
+                                "count": 21
+                            },
+                            {
+                                "name": "Eclipse Cross",
+                                "count": 2
+                            },
+                            {
+                                "name": "Lancer",
+                                "count": 3
+                            },
+                            {
+                                "name": "Outlander",
+                                "count": 30
+                            },
+                            {
+                                "name": "Pajero Sport",
+                                "count": 1
+                            },
+                            {
+                                "name": "Triton",
+                                "count": 8
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Nissan",
+                    "count": 50,
+                    "subFacet": {
+                        "name": "model",
+                        "type": "TERMS",
+                        "mainFilter": false,
+                        "filterType": "sf",
+                        "enabledForSeo": true,
+                        "buckets": [
+                            {
+                                "name": "Juke",
+                                "count": 1
+                            },
+                            {
+                                "name": "Murano",
+                                "count": 1
+                            },
+                            {
+                                "name": "Navara",
+                                "count": 8
+                            },
+                            {
+                                "name": "Pathfinder",
+                                "count": 7
+                            },
+                            {
+                                "name": "Qashqai",
+                                "count": 7
+                            },
+                            {
+                                "name": "Tiida",
+                                "count": 1
+                            },
+                            {
+                                "name": "X-trail",
+                                "count": 25
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Peugeot",
+                    "count": 2,
+                    "subFacet": {
+                        "name": "model",
+                        "type": "TERMS",
+                        "mainFilter": false,
+                        "filterType": "sf",
+                        "enabledForSeo": true,
+                        "buckets": [
+                            {
+                                "name": "3008",
+                                "count": 1
+                            },
+                            {
+                                "name": "508",
+                                "count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Range Rover",
+                    "count": 4,
+                    "subFacet": {
+                        "name": "model",
+                        "type": "TERMS",
+                        "mainFilter": false,
+                        "filterType": "sf",
+                        "enabledForSeo": true,
+                        "buckets": [
+                            {
+                                "name": "Evoque",
+                                "count": 3
+                            },
+                            {
+                                "name": "Sport",
+                                "count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Renault",
+                    "count": 4,
+                    "subFacet": {
+                        "name": "model",
+                        "type": "TERMS",
+                        "mainFilter": false,
+                        "filterType": "sf",
+                        "enabledForSeo": true,
+                        "buckets": [
+                            {
+                                "name": "Arkana",
+                                "count": 1
+                            },
+                            {
+                                "name": "Koleos",
+                                "count": 3
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "SKODA",
+                    "count": 2,
+                    "subFacet": {
+                        "name": "model",
+                        "type": "TERMS",
+                        "mainFilter": false,
+                        "filterType": "sf",
+                        "enabledForSeo": true,
+                        "buckets": [
+                            {
+                                "name": "Octavia",
+                                "count": 1
+                            },
+                            {
+                                "name": "Superb",
+                                "count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Subaru",
+                    "count": 33,
+                    "subFacet": {
+                        "name": "model",
+                        "type": "TERMS",
+                        "mainFilter": false,
+                        "filterType": "sf",
+                        "enabledForSeo": true,
+                        "buckets": [
+                            {
+                                "name": "Forester",
+                                "count": 18
+                            },
+                            {
+                                "name": "Impreza",
+                                "count": 4
+                            },
+                            {
+                                "name": "Outback",
+                                "count": 5
+                            },
+                            {
+                                "name": "WRX",
+                                "count": 1
+                            },
+                            {
+                                "name": "XV",
+                                "count": 5
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Suzuki",
+                    "count": 7,
+                    "subFacet": {
+                        "name": "model",
+                        "type": "TERMS",
+                        "mainFilter": false,
+                        "filterType": "sf",
+                        "enabledForSeo": true,
+                        "buckets": [
+                            {
+                                "name": "Baleno",
+                                "count": 2
+                            },
+                            {
+                                "name": "Swift",
+                                "count": 3
+                            },
+                            {
+                                "name": "Vitara",
+                                "count": 2
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Toyota",
+                    "count": 50,
+                    "subFacet": {
+                        "name": "model",
+                        "type": "TERMS",
+                        "mainFilter": false,
+                        "filterType": "sf",
+                        "enabledForSeo": true,
+                        "buckets": [
+                            {
+                                "name": "86",
+                                "count": 4
+                            },
+                            {
+                                "name": "Camry",
+                                "count": 3
+                            },
+                            {
+                                "name": "Corolla",
+                                "count": 21
+                            },
+                            {
+                                "name": "Hilux",
+                                "count": 2
+                            },
+                            {
+                                "name": "Kluger",
+                                "count": 4
+                            },
+                            {
+                                "name": "RAV4",
+                                "count": 8
+                            },
+                            {
+                                "name": "Yaris",
+                                "count": 8
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Volkswagen",
+                    "count": 58,
+                    "subFacet": {
+                        "name": "model",
+                        "type": "TERMS",
+                        "mainFilter": false,
+                        "filterType": "sf",
+                        "enabledForSeo": true,
+                        "buckets": [
+                            {
+                                "name": "Amarok",
+                                "count": 1
+                            },
+                            {
+                                "name": "Golf",
+                                "count": 25
+                            },
+                            {
+                                "name": "Passat",
+                                "count": 6
+                            },
+                            {
+                                "name": "Polo",
+                                "count": 5
+                            },
+                            {
+                                "name": "T-cross",
+                                "count": 1
+                            },
+                            {
+                                "name": "Tiguan",
+                                "count": 18
+                            },
+                            {
+                                "name": "Touareg",
+                                "count": 2
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Volvo",
+                    "count": 4,
+                    "subFacet": {
+                        "name": "model",
+                        "type": "TERMS",
+                        "mainFilter": false,
+                        "filterType": "sf",
+                        "enabledForSeo": true,
+                        "buckets": [
+                            {
+                                "name": "XC60",
+                                "count": 4
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "colorCategory": {
+            "name": "colorCategory",
+            "type": "TERMS",
+            "displayName": "COLOUR",
+            "mainFilter": true,
+            "filterType": "sf",
+            "enabledForSeo": false,
+            "buckets": [
+                {
+                    "name": "Beige",
+                    "count": 1
+                },
+                {
+                    "name": "Black",
+                    "count": 85
+                },
+                {
+                    "name": "Blue",
+                    "count": 64
+                },
+                {
+                    "name": "Bronze",
+                    "count": 1
+                },
+                {
+                    "name": "Brown",
+                    "count": 2
+                },
+                {
+                    "name": "Grey",
+                    "count": 72
+                },
+                {
+                    "name": "Maroon",
+                    "count": 1
+                },
+                {
+                    "name": "Orange",
+                    "count": 4
+                },
+                {
+                    "name": "Others",
+                    "count": 48
+                },
+                {
+                    "name": "Purple",
+                    "count": 1
+                },
+                {
+                    "name": "Red",
+                    "count": 62
+                },
+                {
+                    "name": "Silver",
+                    "count": 99
+                },
+                {
+                    "name": "White",
+                    "count": 222
+                },
+                {
+                    "name": "Yellow",
+                    "count": 1
+                }
+            ]
+        },
+        "makeCityName": {
+            "name": "makeCityName",
+            "type": "TERMS",
+            "displayName": "Make & City",
+            "mainFilter": true,
+            "filterType": "sf",
+            "enabledForSeo": true,
+            "buckets": [
+                {
+                    "name": "Alfa Romeo",
+                    "count": 1,
+                    "subFacet": {
+                        "name": "city",
+                        "type": "TERMS",
+                        "mainFilter": false,
+                        "filterType": "sf",
+                        "enabledForSeo": true,
+                        "buckets": [
+                            {
+                                "name": "Melbourne",
+                                "count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Audi",
+                    "count": 31,
+                    "subFacet": {
+                        "name": "city",
+                        "type": "TERMS",
+                        "mainFilter": false,
+                        "filterType": "sf",
+                        "enabledForSeo": true,
+                        "buckets": [
+                            {
+                                "name": "Brisbane",
+                                "count": 3
+                            },
+                            {
+                                "name": "Melbourne",
+                                "count": 21
+                            },
+                            {
+                                "name": "Sydney",
+                                "count": 7
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "BMW",
+                    "count": 19,
+                    "subFacet": {
+                        "name": "city",
+                        "type": "TERMS",
+                        "mainFilter": false,
+                        "filterType": "sf",
+                        "enabledForSeo": true,
+                        "buckets": [
+                            {
+                                "name": "Brisbane",
+                                "count": 4
+                            },
+                            {
+                                "name": "Melbourne",
+                                "count": 13
+                            },
+                            {
+                                "name": "Sydney",
+                                "count": 2
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Chrysler",
+                    "count": 2,
+                    "subFacet": {
+                        "name": "city",
+                        "type": "TERMS",
+                        "mainFilter": false,
+                        "filterType": "sf",
+                        "enabledForSeo": true,
+                        "buckets": [
+                            {
+                                "name": "Brisbane",
+                                "count": 1
+                            },
+                            {
+                                "name": "Melbourne",
+                                "count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Fiat",
+                    "count": 1,
+                    "subFacet": {
+                        "name": "city",
+                        "type": "TERMS",
+                        "mainFilter": false,
+                        "filterType": "sf",
+                        "enabledForSeo": true,
+                        "buckets": [
+                            {
+                                "name": "Brisbane",
+                                "count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Ford",
+                    "count": 19,
+                    "subFacet": {
+                        "name": "city",
+                        "type": "TERMS",
+                        "mainFilter": false,
+                        "filterType": "sf",
+                        "enabledForSeo": true,
+                        "buckets": [
+                            {
+                                "name": "Brisbane",
+                                "count": 5
+                            },
+                            {
+                                "name": "Melbourne",
+                                "count": 11
+                            },
+                            {
+                                "name": "Sydney",
+                                "count": 3
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Holden",
+                    "count": 37,
+                    "subFacet": {
+                        "name": "city",
+                        "type": "TERMS",
+                        "mainFilter": false,
+                        "filterType": "sf",
+                        "enabledForSeo": true,
+                        "buckets": [
+                            {
+                                "name": "Brisbane",
+                                "count": 7
+                            },
+                            {
+                                "name": "Melbourne",
+                                "count": 27
+                            },
+                            {
+                                "name": "Sydney",
+                                "count": 3
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Honda",
+                    "count": 14,
+                    "subFacet": {
+                        "name": "city",
+                        "type": "TERMS",
+                        "mainFilter": false,
+                        "filterType": "sf",
+                        "enabledForSeo": true,
+                        "buckets": [
+                            {
+                                "name": "Brisbane",
+                                "count": 2
+                            },
+                            {
+                                "name": "Melbourne",
+                                "count": 12
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Hyundai",
+                    "count": 66,
+                    "subFacet": {
+                        "name": "city",
+                        "type": "TERMS",
+                        "mainFilter": false,
+                        "filterType": "sf",
+                        "enabledForSeo": true,
+                        "buckets": [
+                            {
+                                "name": "Brisbane",
+                                "count": 30
+                            },
+                            {
+                                "name": "Melbourne",
+                                "count": 31
+                            },
+                            {
+                                "name": "Sydney",
+                                "count": 5
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Infiniti",
+                    "count": 3,
+                    "subFacet": {
+                        "name": "city",
+                        "type": "TERMS",
+                        "mainFilter": false,
+                        "filterType": "sf",
+                        "enabledForSeo": true,
+                        "buckets": [
+                            {
+                                "name": "Melbourne",
+                                "count": 3
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Isuzu",
+                    "count": 2,
+                    "subFacet": {
+                        "name": "city",
+                        "type": "TERMS",
+                        "mainFilter": false,
+                        "filterType": "sf",
+                        "enabledForSeo": true,
+                        "buckets": [
+                            {
+                                "name": "Brisbane",
+                                "count": 1
+                            },
+                            {
+                                "name": "Sydney",
+                                "count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Jaguar",
+                    "count": 5,
+                    "subFacet": {
+                        "name": "city",
+                        "type": "TERMS",
+                        "mainFilter": false,
+                        "filterType": "sf",
+                        "enabledForSeo": true,
+                        "buckets": [
+                            {
+                                "name": "Melbourne",
+                                "count": 4
+                            },
+                            {
+                                "name": "Sydney",
+                                "count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Jeep",
+                    "count": 11,
+                    "subFacet": {
+                        "name": "city",
+                        "type": "TERMS",
+                        "mainFilter": false,
+                        "filterType": "sf",
+                        "enabledForSeo": true,
+                        "buckets": [
+                            {
+                                "name": "Brisbane",
+                                "count": 3
+                            },
+                            {
+                                "name": "Melbourne",
+                                "count": 7
+                            },
+                            {
+                                "name": "Sydney",
+                                "count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Kia",
+                    "count": 60,
+                    "subFacet": {
+                        "name": "city",
+                        "type": "TERMS",
+                        "mainFilter": false,
+                        "filterType": "sf",
+                        "enabledForSeo": true,
+                        "buckets": [
+                            {
+                                "name": "Brisbane",
+                                "count": 24
+                            },
+                            {
+                                "name": "Melbourne",
+                                "count": 34
+                            },
+                            {
+                                "name": "Sydney",
+                                "count": 2
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Land Rover",
+                    "count": 12,
+                    "subFacet": {
+                        "name": "city",
+                        "type": "TERMS",
+                        "mainFilter": false,
+                        "filterType": "sf",
+                        "enabledForSeo": true,
+                        "buckets": [
+                            {
+                                "name": "Brisbane",
+                                "count": 1
+                            },
+                            {
+                                "name": "Melbourne",
+                                "count": 11
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Lexus",
+                    "count": 4,
+                    "subFacet": {
+                        "name": "city",
+                        "type": "TERMS",
+                        "mainFilter": false,
+                        "filterType": "sf",
+                        "enabledForSeo": true,
+                        "buckets": [
+                            {
+                                "name": "Brisbane",
+                                "count": 2
+                            },
+                            {
+                                "name": "Sydney",
+                                "count": 2
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "MG",
+                    "count": 4,
+                    "subFacet": {
+                        "name": "city",
+                        "type": "TERMS",
+                        "mainFilter": false,
+                        "filterType": "sf",
+                        "enabledForSeo": true,
+                        "buckets": [
+                            {
+                                "name": "Brisbane",
+                                "count": 1
+                            },
+                            {
+                                "name": "Melbourne",
+                                "count": 3
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "MINI",
+                    "count": 3,
+                    "subFacet": {
+                        "name": "city",
+                        "type": "TERMS",
+                        "mainFilter": false,
+                        "filterType": "sf",
+                        "enabledForSeo": true,
+                        "buckets": [
+                            {
+                                "name": "Melbourne",
+                                "count": 2
+                            },
+                            {
+                                "name": "Sydney",
+                                "count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Mazda",
+                    "count": 51,
+                    "subFacet": {
+                        "name": "city",
+                        "type": "TERMS",
+                        "mainFilter": false,
+                        "filterType": "sf",
+                        "enabledForSeo": true,
+                        "buckets": [
+                            {
+                                "name": "Brisbane",
+                                "count": 18
+                            },
+                            {
+                                "name": "Melbourne",
+                                "count": 29
+                            },
+                            {
+                                "name": "Sydney",
+                                "count": 4
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Mercedes-benz",
+                    "count": 39,
+                    "subFacet": {
+                        "name": "city",
+                        "type": "TERMS",
+                        "mainFilter": false,
+                        "filterType": "sf",
+                        "enabledForSeo": true,
+                        "buckets": [
+                            {
+                                "name": "Brisbane",
+                                "count": 6
+                            },
+                            {
+                                "name": "Melbourne",
+                                "count": 29
+                            },
+                            {
+                                "name": "Sydney",
+                                "count": 4
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Mitsubishi",
+                    "count": 65,
+                    "subFacet": {
+                        "name": "city",
+                        "type": "TERMS",
+                        "mainFilter": false,
+                        "filterType": "sf",
+                        "enabledForSeo": true,
+                        "buckets": [
+                            {
+                                "name": "Brisbane",
+                                "count": 31
+                            },
+                            {
+                                "name": "Melbourne",
+                                "count": 33
+                            },
+                            {
+                                "name": "Sydney",
+                                "count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Nissan",
+                    "count": 50,
+                    "subFacet": {
+                        "name": "city",
+                        "type": "TERMS",
+                        "mainFilter": false,
+                        "filterType": "sf",
+                        "enabledForSeo": true,
+                        "buckets": [
+                            {
+                                "name": "Brisbane",
+                                "count": 14
+                            },
+                            {
+                                "name": "Melbourne",
+                                "count": 35
+                            },
+                            {
+                                "name": "Sydney",
+                                "count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Peugeot",
+                    "count": 2,
+                    "subFacet": {
+                        "name": "city",
+                        "type": "TERMS",
+                        "mainFilter": false,
+                        "filterType": "sf",
+                        "enabledForSeo": true,
+                        "buckets": [
+                            {
+                                "name": "Brisbane",
+                                "count": 1
+                            },
+                            {
+                                "name": "Sydney",
+                                "count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Range Rover",
+                    "count": 4,
+                    "subFacet": {
+                        "name": "city",
+                        "type": "TERMS",
+                        "mainFilter": false,
+                        "filterType": "sf",
+                        "enabledForSeo": true,
+                        "buckets": [
+                            {
+                                "name": "Brisbane",
+                                "count": 1
+                            },
+                            {
+                                "name": "Melbourne",
+                                "count": 2
+                            },
+                            {
+                                "name": "Sydney",
+                                "count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Renault",
+                    "count": 4,
+                    "subFacet": {
+                        "name": "city",
+                        "type": "TERMS",
+                        "mainFilter": false,
+                        "filterType": "sf",
+                        "enabledForSeo": true,
+                        "buckets": [
+                            {
+                                "name": "Melbourne",
+                                "count": 3
+                            },
+                            {
+                                "name": "Sydney",
+                                "count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "SKODA",
+                    "count": 2,
+                    "subFacet": {
+                        "name": "city",
+                        "type": "TERMS",
+                        "mainFilter": false,
+                        "filterType": "sf",
+                        "enabledForSeo": true,
+                        "buckets": [
+                            {
+                                "name": "Melbourne",
+                                "count": 1
+                            },
+                            {
+                                "name": "Sydney",
+                                "count": 1
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Subaru",
+                    "count": 33,
+                    "subFacet": {
+                        "name": "city",
+                        "type": "TERMS",
+                        "mainFilter": false,
+                        "filterType": "sf",
+                        "enabledForSeo": true,
+                        "buckets": [
+                            {
+                                "name": "Brisbane",
+                                "count": 8
+                            },
+                            {
+                                "name": "Melbourne",
+                                "count": 23
+                            },
+                            {
+                                "name": "Sydney",
+                                "count": 2
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Suzuki",
+                    "count": 7,
+                    "subFacet": {
+                        "name": "city",
+                        "type": "TERMS",
+                        "mainFilter": false,
+                        "filterType": "sf",
+                        "enabledForSeo": true,
+                        "buckets": [
+                            {
+                                "name": "Brisbane",
+                                "count": 3
+                            },
+                            {
+                                "name": "Melbourne",
+                                "count": 4
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Toyota",
+                    "count": 50,
+                    "subFacet": {
+                        "name": "city",
+                        "type": "TERMS",
+                        "mainFilter": false,
+                        "filterType": "sf",
+                        "enabledForSeo": true,
+                        "buckets": [
+                            {
+                                "name": "Brisbane",
+                                "count": 19
+                            },
+                            {
+                                "name": "Melbourne",
+                                "count": 24
+                            },
+                            {
+                                "name": "Sydney",
+                                "count": 7
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Volkswagen",
+                    "count": 58,
+                    "subFacet": {
+                        "name": "city",
+                        "type": "TERMS",
+                        "mainFilter": false,
+                        "filterType": "sf",
+                        "enabledForSeo": true,
+                        "buckets": [
+                            {
+                                "name": "Brisbane",
+                                "count": 16
+                            },
+                            {
+                                "name": "Melbourne",
+                                "count": 37
+                            },
+                            {
+                                "name": "Sydney",
+                                "count": 5
+                            }
+                        ]
+                    }
+                },
+                {
+                    "name": "Volvo",
+                    "count": 4,
+                    "subFacet": {
+                        "name": "city",
+                        "type": "TERMS",
+                        "mainFilter": false,
+                        "filterType": "sf",
+                        "enabledForSeo": true,
+                        "buckets": [
+                            {
+                                "name": "Melbourne",
+                                "count": 1
+                            },
+                            {
+                                "name": "Sydney",
+                                "count": 3
+                            }
+                        ]
+                    }
+                }
+            ]
+        },
+        "promotion": {
+            "name": "promotion",
+            "type": "TERMS",
+            "displayName": "PROMOTION",
+            "mainFilter": true,
+            "filterType": "sf",
+            "enabledForSeo": false,
+            "buckets": [
+                {
+                    "name": "Off sale",
+                    "count": 481
+                },
+                {
+                    "name": "On sale",
+                    "count": 182
+                }
+            ]
+        }
+    },
+    "config": {
+        "imageHost": "https://fastly-production.24c.in/",
+        "brandImageHost": "https://fastly-production.24c.in/au/"
+    },
+    "results": [
+        {
+            "appointmentId": "9970410607232",
+            "year": "2019",
+            "egc": 22790.0,
+            "estimatedPrice": 22790.0,
+            "tradeInAmount": null,
+            "personalised": false,
+            "emiDetails": {
+                "emi": 508.0,
+                "interestRate": 9.39,
+                "balloonPercentage": 0.0,
+                "defaultDownPayment": 500,
+                "lenderFee": 1489.0,
+                "comparisonRate": 12.15,
+                "emiPerWeek": 117.0,
+                "maxDownPayment": 17790.0,
+                "lenderMonthlyFee": 9.9,
+                "minDownPayment": 500,
+                "tenure": 5
+            },
+            "expressDelivery": null,
+            "cityCode": "AU_VIC_MEL",
+            "stateCode": "AU_VIC",
+            "state": "Victoria",
+            "make": "Kia",
+            "model": "Cerato",
+            "variant": "S",
+            "trim": null,
+            "specs": null,
+            "engineSize": null,
+            "driveType": "Front Wheel Drive",
+            "noOfCylinders": null,
+            "turbochargerSuperchargerAvailable": false,
+            "booked": false,
+            "listingActive": true,
+            "city": "Melbourne",
+            "promotion": "Off sale",
+            "vin": "KNAF251CMK5045852",
+            "kbbAskingPrice": 23683,
+            "kbbAskingPriceRangeMin": 22236,
+            "kbbAskingPriceRangeMax": 25130,
+            "kbbValueProvidedOn": "06/26/2023",
+            "threeSixtyViewUrl": "https://au.viewer.cars24.com?id=6498d2daeceb025a33ea87a9",
+            "threeSixtyViewAvailable": true,
+            "mediaSource": "helloAR",
+            "kerbWeight": 1320.0,
+            "mainImage": {
+                "path": "hello-ar/dev/uploads/31ee1757-6f60-4868-8567-bf721d370184/b8a65980-8826-480a-af1c-0249fb41fbd6/exterior/32.jpg",
+                "label": "Right Front Diagonal"
+            },
+            "gst": 2071.818181818184,
+            "body": "Hatchback",
+            "comingSoon": false,
+            "reserved": false,
+            "dapPriceEnabled": false,
+            "offer": null,
+            "exteriorImages": null,
+            "interiorImages": null,
+            "imperfectionImages": null,
+            "vehicleFeatures": null,
+            "vehicleSpecifications": null,
+            "dapPrice": null,
+            "inspectionObject": null,
+            "price": 0.0,
+            "odometerReading": 59775,
+            "ownerNumber": null,
+            "transmissionType": "Automatic",
+            "fuelType": "Petrol",
+            "seats": "5"
+        },
+        {
+            "appointmentId": "9960359219392",
+            "year": "2013",
+            "egc": 23490.0,
+            "estimatedPrice": 23490.0,
+            "tradeInAmount": null,
+            "personalised": false,
+            "emiDetails": {
+                "emi": 525.0,
+                "interestRate": 9.59,
+                "balloonPercentage": 0.0,
+                "defaultDownPayment": 500,
+                "lenderFee": 1489.0,
+                "comparisonRate": 12.35,
+                "emiPerWeek": 121.0,
+                "maxDownPayment": 18490.0,
+                "lenderMonthlyFee": 9.9,
+                "minDownPayment": 500,
+                "tenure": 5
+            },
+            "expressDelivery": null,
+            "cityCode": "AU_VIC_MEL",
+            "stateCode": "AU_VIC",
+            "state": "Victoria",
+            "make": "Audi",
+            "model": "A5",
+            "variant": "Sportback 2.0 Tfsi Quattro",
+            "trim": null,
+            "specs": null,
+            "engineSize": null,
+            "driveType": "All Wheel Drive",
+            "noOfCylinders": null,
+            "turbochargerSuperchargerAvailable": false,
+            "booked": false,
+            "listingActive": true,
+            "city": "Melbourne",
+            "promotion": "Off sale",
+            "vin": "WAUZZZ8T9EA003946",
+            "kbbAskingPrice": 24112,
+            "kbbAskingPriceRangeMin": 22650,
+            "kbbAskingPriceRangeMax": 25574,
+            "kbbValueProvidedOn": "06/26/2023",
+            "threeSixtyViewUrl": "https://au.viewer.cars24.com?id=6498bcd0d75505bc86a66448",
+            "threeSixtyViewAvailable": true,
+            "mediaSource": "helloAR",
+            "kerbWeight": 1615.0,
+            "mainImage": {
+                "path": "hello-ar/dev/uploads/d0a932fc-b318-4267-9e63-d521c5de88d5/3a610fd7-c2ce-41ee-b4eb-c45cef9c4dda/exterior/32.jpg",
+                "label": "Right Front Diagonal"
+            },
+            "gst": 2135.4545454545478,
+            "body": "Hatchback",
+            "comingSoon": false,
+            "reserved": false,
+            "dapPriceEnabled": false,
+            "offer": null,
+            "exteriorImages": null,
+            "interiorImages": null,
+            "imperfectionImages": null,
+            "vehicleFeatures": null,
+            "vehicleSpecifications": null,
+            "dapPrice": null,
+            "inspectionObject": null,
+            "price": 0.0,
+            "odometerReading": 99179,
+            "ownerNumber": null,
+            "transmissionType": "Automatic",
+            "fuelType": "Petrol",
+            "seats": "4"
+        },
+        {
+            "appointmentId": "5292283263040",
+            "year": "2017",
+            "egc": 25990.0,
+            "estimatedPrice": 25990.0,
+            "tradeInAmount": null,
+            "personalised": false,
+            "emiDetails": {
+                "emi": 575.0,
+                "interestRate": 9.39,
+                "balloonPercentage": 0.0,
+                "defaultDownPayment": 500,
+                "lenderFee": 1489.0,
+                "comparisonRate": 12.15,
+                "emiPerWeek": 132.0,
+                "maxDownPayment": 20990.0,
+                "lenderMonthlyFee": 9.9,
+                "minDownPayment": 500,
+                "tenure": 5
+            },
+            "expressDelivery": null,
+            "cityCode": "AU_VIC_MEL",
+            "stateCode": "AU_VIC",
+            "state": "Victoria",
+            "make": "Volkswagen",
+            "model": "Passat",
+            "variant": "140 Tdi Highline",
+            "trim": null,
+            "specs": null,
+            "engineSize": null,
+            "driveType": "Front Wheel Drive",
+            "noOfCylinders": null,
+            "turbochargerSuperchargerAvailable": false,
+            "booked": false,
+            "listingActive": true,
+            "city": "Melbourne",
+            "promotion": "On sale",
+            "vin": "WVWZZZ3CZJE073914",
+            "kbbAskingPrice": 31488,
+            "kbbAskingPriceRangeMin": 29789,
+            "kbbAskingPriceRangeMax": 33188,
+            "kbbValueProvidedOn": "06/29/2023",
+            "threeSixtyViewUrl": "https://au.viewer.cars24.com?id=62983be01c01f31dc89a8ce9",
+            "threeSixtyViewAvailable": true,
+            "mediaSource": "helloAR",
+            "kerbWeight": 1562.0,
+            "mainImage": {
+                "path": "hello-ar/dev/uploads/62983be01c01f31dc89a8ce9/033a6555-889b-4479-8899-f9bf4e510308/slot/Right-Front-Diagonal--45--Degree--View--22-.jpg",
+                "label": "Right Front Diagonal"
+            },
+            "gst": 2362.7272727272757,
+            "body": "Wagon",
+            "comingSoon": false,
+            "reserved": false,
+            "dapPriceEnabled": false,
+            "offer": null,
+            "exteriorImages": null,
+            "interiorImages": null,
+            "imperfectionImages": null,
+            "vehicleFeatures": null,
+            "vehicleSpecifications": null,
+            "dapPrice": null,
+            "inspectionObject": null,
+            "price": 26990.0,
+            "odometerReading": 103599,
+            "ownerNumber": null,
+            "transmissionType": "Automatic",
+            "fuelType": "Diesel",
+            "seats": "5"
+        },
+        {
+            "appointmentId": "9868545643904",
+            "year": "2019",
+            "egc": 29790.0,
+            "estimatedPrice": 29790.0,
+            "tradeInAmount": null,
+            "personalised": false,
+            "emiDetails": {
+                "emi": 655.0,
+                "interestRate": 9.39,
+                "balloonPercentage": 0.0,
+                "defaultDownPayment": 500,
+                "lenderFee": 1489.0,
+                "comparisonRate": 12.15,
+                "emiPerWeek": 151.0,
+                "maxDownPayment": 24790.0,
+                "lenderMonthlyFee": 9.9,
+                "minDownPayment": 500,
+                "tenure": 5
+            },
+            "expressDelivery": null,
+            "cityCode": "AU_QLD_BNE",
+            "stateCode": "AU_QLD",
+            "state": "Queensland",
+            "make": "Mitsubishi",
+            "model": "Outlander",
+            "variant": "Es 7 Seat (awd)",
+            "trim": null,
+            "specs": null,
+            "engineSize": null,
+            "driveType": "All Wheel Drive",
+            "noOfCylinders": null,
+            "turbochargerSuperchargerAvailable": false,
+            "booked": false,
+            "listingActive": true,
+            "city": "Brisbane",
+            "promotion": "Off sale",
+            "vin": "JMFXTGF8WKZ007182",
+            "kbbAskingPrice": 30181,
+            "kbbAskingPriceRangeMin": 28521,
+            "kbbAskingPriceRangeMax": 31842,
+            "kbbValueProvidedOn": "06/26/2023",
+            "threeSixtyViewUrl": "https://au.viewer.cars24.com?id=6499164a2fa627f447ecd004",
+            "threeSixtyViewAvailable": true,
+            "mediaSource": "helloAR",
+            "kerbWeight": 1500.0,
+            "mainImage": {
+                "path": "hello-ar/dev/uploads/230f74d9-7819-4eb2-9f60-1803bea432cb/1f08f585-17c6-4b70-8c9f-1bfae9bbf00c/exterior/33.jpg",
+                "label": "Right Front Diagonal"
+            },
+            "gst": 2708.18181818182,
+            "body": "SUV",
+            "comingSoon": false,
+            "reserved": false,
+            "dapPriceEnabled": false,
+            "offer": null,
+            "exteriorImages": null,
+            "interiorImages": null,
+            "imperfectionImages": null,
+            "vehicleFeatures": null,
+            "vehicleSpecifications": null,
+            "dapPrice": null,
+            "inspectionObject": null,
+            "price": 0.0,
+            "odometerReading": 63921,
+            "ownerNumber": null,
+            "transmissionType": "Automatic",
+            "fuelType": "Petrol",
+            "seats": "7"
+        },
+        {
+            "appointmentId": "6111226507",
+            "year": "2016",
+            "egc": 42390.0,
+            "estimatedPrice": 42390.0,
+            "tradeInAmount": null,
+            "personalised": false,
+            "emiDetails": {
+                "emi": 929.0,
+                "interestRate": 9.39,
+                "balloonPercentage": 0.0,
+                "defaultDownPayment": 500,
+                "lenderFee": 1999.0,
+                "comparisonRate": 12.85,
+                "emiPerWeek": 214.0,
+                "maxDownPayment": 37390.0,
+                "lenderMonthlyFee": 9.9,
+                "minDownPayment": 500,
+                "tenure": 5
+            },
+            "expressDelivery": null,
+            "cityCode": "AU_VIC_MEL",
+            "stateCode": "AU_VIC",
+            "state": "Victoria",
+            "make": "Jaguar",
+            "model": "F-PACE",
+            "variant": "20d Prestige Awd",
+            "trim": null,
+            "specs": null,
+            "engineSize": null,
+            "driveType": "All Wheel Drive",
+            "noOfCylinders": null,
+            "turbochargerSuperchargerAvailable": false,
+            "booked": false,
+            "listingActive": true,
+            "city": "Melbourne",
+            "promotion": "On sale",
+            "vin": "SADCA2AN7HA491337",
+            "kbbAskingPrice": 45012,
+            "kbbAskingPriceRangeMin": 42986,
+            "kbbAskingPriceRangeMax": 47039,
+            "kbbValueProvidedOn": "06/24/2023",
+            "threeSixtyViewUrl": "https://au.viewer.cars24.com?id=61b2c602361a665155e754dd",
+            "threeSixtyViewAvailable": true,
+            "mediaSource": "helloAR",
+            "kerbWeight": 1733.0,
+            "mainImage": {
+                "path": "hello-ar/dev/uploads/61b2c602361a665155e754dd/c0bd2b60-2244-49e3-98a1-42f183b178ac/slot/6111226507.jpg",
+                "label": "Right Front Diagonal"
+            },
+            "gst": 3853.6363636363676,
+            "body": "SUV",
+            "comingSoon": false,
+            "reserved": false,
+            "dapPriceEnabled": false,
+            "offer": null,
+            "exteriorImages": null,
+            "interiorImages": null,
+            "imperfectionImages": null,
+            "vehicleFeatures": null,
+            "vehicleSpecifications": null,
+            "dapPrice": null,
+            "inspectionObject": null,
+            "price": 44490.0,
+            "odometerReading": 59232,
+            "ownerNumber": null,
+            "transmissionType": "Automatic",
+            "fuelType": "Diesel",
+            "seats": "5"
+        },
+        {
+            "appointmentId": "6255965767360",
+            "year": "2018",
+            "egc": 25390.0,
+            "estimatedPrice": 25390.0,
+            "tradeInAmount": null,
+            "personalised": false,
+            "emiDetails": {
+                "emi": 562.0,
+                "interestRate": 9.39,
+                "balloonPercentage": 0.0,
+                "defaultDownPayment": 500,
+                "lenderFee": 1489.0,
+                "comparisonRate": 12.15,
+                "emiPerWeek": 130.0,
+                "maxDownPayment": 20390.0,
+                "lenderMonthlyFee": 9.9,
+                "minDownPayment": 500,
+                "tenure": 5
+            },
+            "expressDelivery": null,
+            "cityCode": "AU_VIC_MEL",
+            "stateCode": "AU_VIC",
+            "state": "Victoria",
+            "make": "Volkswagen",
+            "model": "Golf",
+            "variant": "110 Tsi Highline",
+            "trim": null,
+            "specs": null,
+            "engineSize": null,
+            "driveType": "Front Wheel Drive",
+            "noOfCylinders": null,
+            "turbochargerSuperchargerAvailable": false,
+            "booked": false,
+            "listingActive": true,
+            "city": "Melbourne",
+            "promotion": "Off sale",
+            "vin": "WVWZZZAUZJP617174",
+            "kbbAskingPrice": 26085,
+            "kbbAskingPriceRangeMin": 24555,
+            "kbbAskingPriceRangeMax": 27616,
+            "kbbValueProvidedOn": "06/29/2023",
+            "threeSixtyViewUrl": "https://au.viewer.cars24.com?id=62df62c7b140909129cddd77",
+            "threeSixtyViewAvailable": true,
+            "mediaSource": "helloAR",
+            "kerbWeight": 1324.0,
+            "mainImage": {
+                "path": "hello-ar/dev/uploads/62df62c7b140909129cddd77/f36a2d65-9b9d-4c7f-a828-c2a47cece9d6/slot/Right-Front-Diagonal--45--Degree--View--13-.jpg",
+                "label": "Right Front Diagonal"
+            },
+            "gst": 2308.18181818182,
+            "body": "Wagon",
+            "comingSoon": false,
+            "reserved": false,
+            "dapPriceEnabled": false,
+            "offer": null,
+            "exteriorImages": null,
+            "interiorImages": null,
+            "imperfectionImages": null,
+            "vehicleFeatures": null,
+            "vehicleSpecifications": null,
+            "dapPrice": null,
+            "inspectionObject": null,
+            "price": 25390.0,
+            "odometerReading": 103542,
+            "ownerNumber": null,
+            "transmissionType": "Automatic",
+            "fuelType": "Petrol",
+            "seats": "5"
+        },
+        {
+            "appointmentId": "9871287217664",
+            "year": "2019",
+            "egc": 24190.0,
+            "estimatedPrice": 24190.0,
+            "tradeInAmount": null,
+            "personalised": false,
+            "emiDetails": {
+                "emi": 537.0,
+                "interestRate": 9.39,
+                "balloonPercentage": 0.0,
+                "defaultDownPayment": 500,
+                "lenderFee": 1489.0,
+                "comparisonRate": 12.15,
+                "emiPerWeek": 124.0,
+                "maxDownPayment": 19190.0,
+                "lenderMonthlyFee": 9.9,
+                "minDownPayment": 500,
+                "tenure": 5
+            },
+            "expressDelivery": null,
+            "cityCode": "AU_QLD_BNE",
+            "stateCode": "AU_QLD",
+            "state": "Queensland",
+            "make": "Hyundai",
+            "model": "i30",
+            "variant": "Active",
+            "trim": null,
+            "specs": null,
+            "engineSize": null,
+            "driveType": "Front Wheel Drive",
+            "noOfCylinders": null,
+            "turbochargerSuperchargerAvailable": false,
+            "booked": false,
+            "listingActive": true,
+            "city": "Brisbane",
+            "promotion": "Off sale",
+            "vin": "KMHH351EMKU104818",
+            "kbbAskingPrice": 24397,
+            "kbbAskingPriceRangeMin": 22925,
+            "kbbAskingPriceRangeMax": 25869,
+            "kbbValueProvidedOn": "06/26/2023",
+            "threeSixtyViewUrl": "https://au.viewer.cars24.com?id=6499100850bf53c6a05e9a41",
+            "threeSixtyViewAvailable": true,
+            "mediaSource": "helloAR",
+            "kerbWeight": 1276.0,
+            "mainImage": {
+                "path": "hello-ar/dev/uploads/b3d23ef0-464e-49e3-b695-01b77c77ccbc/3279d230-48fc-431e-a117-a410030de047/exterior/32.jpg",
+                "label": "Right Front Diagonal"
+            },
+            "gst": 2199.0909090909117,
+            "body": "Hatchback",
+            "comingSoon": false,
+            "reserved": false,
+            "dapPriceEnabled": false,
+            "offer": null,
+            "exteriorImages": null,
+            "interiorImages": null,
+            "imperfectionImages": null,
+            "vehicleFeatures": null,
+            "vehicleSpecifications": null,
+            "dapPrice": null,
+            "inspectionObject": null,
+            "price": 0.0,
+            "odometerReading": 53381,
+            "ownerNumber": null,
+            "transmissionType": "Automatic",
+            "fuelType": "Petrol",
+            "seats": "5"
+        },
+        {
+            "appointmentId": "10107710565952",
+            "year": "2020",
+            "egc": 31490.0,
+            "estimatedPrice": 31490.0,
+            "tradeInAmount": null,
+            "personalised": false,
+            "emiDetails": {
+                "emi": 694.0,
+                "interestRate": 9.29,
+                "balloonPercentage": 0.0,
+                "defaultDownPayment": 500,
+                "lenderFee": 1749.0,
+                "comparisonRate": 12.4,
+                "emiPerWeek": 160.0,
+                "maxDownPayment": 26490.0,
+                "lenderMonthlyFee": 9.9,
+                "minDownPayment": 500,
+                "tenure": 5
+            },
+            "expressDelivery": null,
+            "cityCode": "AU_QLD_BNE",
+            "stateCode": "AU_QLD",
+            "state": "Queensland",
+            "make": "Mitsubishi",
+            "model": "Eclipse Cross",
+            "variant": "Ls (2wd)",
+            "trim": null,
+            "specs": null,
+            "engineSize": null,
+            "driveType": "Front Wheel Drive",
+            "noOfCylinders": null,
+            "turbochargerSuperchargerAvailable": false,
+            "booked": false,
+            "listingActive": true,
+            "city": "Brisbane",
+            "promotion": "Off sale",
+            "vin": "JMFXTGK1WLZ005119",
+            "kbbAskingPrice": 34490,
+            "kbbAskingPriceRangeMin": 32708,
+            "kbbAskingPriceRangeMax": 36273,
+            "kbbValueProvidedOn": "06/26/2023",
+            "threeSixtyViewUrl": "https://au.viewer.cars24.com?id=6498ed631c8db85db6ac8f38",
+            "threeSixtyViewAvailable": true,
+            "mediaSource": "helloAR",
+            "kerbWeight": 1486.0,
+            "mainImage": {
+                "path": "hello-ar/dev/uploads/17c96bc8-a238-4074-864b-21478d707bb5/dd19dc8e-1068-4131-919a-e154e19d7f5a/exterior/33.jpg",
+                "label": "Right Front Diagonal"
+            },
+            "gst": 2862.7272727272757,
+            "body": "SUV",
+            "comingSoon": false,
+            "reserved": false,
+            "dapPriceEnabled": false,
+            "offer": null,
+            "exteriorImages": null,
+            "interiorImages": null,
+            "imperfectionImages": null,
+            "vehicleFeatures": null,
+            "vehicleSpecifications": null,
+            "dapPrice": null,
+            "inspectionObject": null,
+            "price": 0.0,
+            "odometerReading": 16869,
+            "ownerNumber": null,
+            "transmissionType": "Automatic",
+            "fuelType": "Petrol",
+            "seats": "5"
+        },
+        {
+            "appointmentId": "6111227558",
+            "year": "2016",
+            "egc": 33690.0,
+            "estimatedPrice": 33690.0,
+            "tradeInAmount": null,
+            "personalised": false,
+            "emiDetails": {
+                "emi": 742.0,
+                "interestRate": 9.39,
+                "balloonPercentage": 0.0,
+                "defaultDownPayment": 500,
+                "lenderFee": 1749.0,
+                "comparisonRate": 12.5,
+                "emiPerWeek": 171.0,
+                "maxDownPayment": 28690.0,
+                "lenderMonthlyFee": 9.9,
+                "minDownPayment": 500,
+                "tenure": 5
+            },
+            "expressDelivery": null,
+            "cityCode": "AU_VIC_MEL",
+            "stateCode": "AU_VIC",
+            "state": "Victoria",
+            "make": "Land Rover",
+            "model": "Discovery Sport",
+            "variant": "Td4 Hse",
+            "trim": null,
+            "specs": null,
+            "engineSize": null,
+            "driveType": "All Wheel Drive",
+            "noOfCylinders": null,
+            "turbochargerSuperchargerAvailable": false,
+            "booked": false,
+            "listingActive": true,
+            "city": "Melbourne",
+            "promotion": "On sale",
+            "vin": "SALCA2AC9GH592839",
+            "kbbAskingPrice": 35461,
+            "kbbAskingPriceRangeMin": 33653,
+            "kbbAskingPriceRangeMax": 37269,
+            "kbbValueProvidedOn": "06/29/2023",
+            "threeSixtyViewUrl": "https://au.viewer.cars24.com?id=624a5fd4cc9bc47ad4e63508",
+            "threeSixtyViewAvailable": true,
+            "mediaSource": "helloAR",
+            "kerbWeight": 1720.0,
+            "mainImage": {
+                "path": "hello-ar/dev/uploads/624a5fd4cc9bc47ad4e63508/d32b20d0-7883-47f0-9522-521f58108699/slot/11.jpg",
+                "label": "Right Front Diagonal"
+            },
+            "gst": 3062.7272727272757,
+            "body": "SUV",
+            "comingSoon": false,
+            "reserved": false,
+            "dapPriceEnabled": false,
+            "offer": null,
+            "exteriorImages": null,
+            "interiorImages": null,
+            "imperfectionImages": null,
+            "vehicleFeatures": null,
+            "vehicleSpecifications": null,
+            "dapPrice": null,
+            "inspectionObject": null,
+            "price": 34980.0,
+            "odometerReading": 86125,
+            "ownerNumber": null,
+            "transmissionType": "Automatic",
+            "fuelType": "Diesel",
+            "seats": "5"
+        },
+        {
+            "appointmentId": "6111226870",
+            "year": "2015",
+            "egc": 38890.0,
+            "estimatedPrice": 38890.0,
+            "tradeInAmount": null,
+            "personalised": false,
+            "emiDetails": {
+                "emi": 855.0,
+                "interestRate": 9.59,
+                "balloonPercentage": 0.0,
+                "defaultDownPayment": 500,
+                "lenderFee": 1749.0,
+                "comparisonRate": 12.71,
+                "emiPerWeek": 197.0,
+                "maxDownPayment": 33890.0,
+                "lenderMonthlyFee": 9.9,
+                "minDownPayment": 500,
+                "tenure": 5
+            },
+            "expressDelivery": null,
+            "cityCode": "AU_VIC_MEL",
+            "stateCode": "AU_VIC",
+            "state": "Victoria",
+            "make": "Land Rover",
+            "model": "Discovery Sport",
+            "variant": "Sd4 Hse Luxury",
+            "trim": null,
+            "specs": null,
+            "engineSize": null,
+            "driveType": "All Wheel Drive",
+            "noOfCylinders": null,
+            "turbochargerSuperchargerAvailable": false,
+            "booked": false,
+            "listingActive": true,
+            "city": "Melbourne",
+            "promotion": "On sale",
+            "vin": "SALCA2AE1GH575390",
+            "kbbAskingPrice": 35664,
+            "kbbAskingPriceRangeMin": 33851,
+            "kbbAskingPriceRangeMax": 37478,
+            "kbbValueProvidedOn": "06/29/2023",
+            "threeSixtyViewUrl": "https://au.viewer.cars24.com?id=633bac711e75ffae11d2b365",
+            "threeSixtyViewAvailable": true,
+            "mediaSource": "helloAR",
+            "kerbWeight": 1720.0,
+            "mainImage": {
+                "path": "hello-ar/dev/uploads/202d2775-ec32-49bc-947c-39a4bca12d2b/3954a078-2678-415f-971d-e61e447db374/exterior/33.jpg",
+                "label": "Right Front Diagonal"
+            },
+            "gst": 3535.4545454545514,
+            "body": "SUV",
+            "comingSoon": false,
+            "reserved": false,
+            "dapPriceEnabled": false,
+            "offer": null,
+            "exteriorImages": null,
+            "interiorImages": null,
+            "imperfectionImages": null,
+            "vehicleFeatures": null,
+            "vehicleSpecifications": null,
+            "dapPrice": null,
+            "inspectionObject": null,
+            "price": 39990.0,
+            "odometerReading": 85507,
+            "ownerNumber": null,
+            "transmissionType": "Automatic",
+            "fuelType": "Diesel",
+            "seats": "5"
+        },
+        {
+            "appointmentId": "9970849175040",
+            "year": "2020",
+            "egc": 28490.0,
+            "estimatedPrice": 28490.0,
+            "tradeInAmount": null,
+            "personalised": false,
+            "emiDetails": {
+                "emi": 626.0,
+                "interestRate": 9.29,
+                "balloonPercentage": 0.0,
+                "defaultDownPayment": 500,
+                "lenderFee": 1489.0,
+                "comparisonRate": 12.04,
+                "emiPerWeek": 144.0,
+                "maxDownPayment": 23490.0,
+                "lenderMonthlyFee": 9.9,
+                "minDownPayment": 500,
+                "tenure": 5
+            },
+            "expressDelivery": null,
+            "cityCode": "AU_VIC_MEL",
+            "stateCode": "AU_VIC",
+            "state": "Victoria",
+            "make": "Nissan",
+            "model": "X-trail",
+            "variant": "St (4x4)",
+            "trim": null,
+            "specs": null,
+            "engineSize": null,
+            "driveType": "Four Wheel Drive",
+            "noOfCylinders": null,
+            "turbochargerSuperchargerAvailable": false,
+            "booked": false,
+            "listingActive": true,
+            "city": "Melbourne",
+            "promotion": "Off sale",
+            "vin": "JN1TBNT32A0060073",
+            "kbbAskingPrice": 28619,
+            "kbbAskingPriceRangeMin": 27006,
+            "kbbAskingPriceRangeMax": 30232,
+            "kbbValueProvidedOn": "06/22/2023",
+            "threeSixtyViewUrl": "https://au.viewer.cars24.com?id=649396286f251c196c43bc50",
+            "threeSixtyViewAvailable": true,
+            "mediaSource": "helloAR",
+            "kerbWeight": 1514.0,
+            "mainImage": {
+                "path": "hello-ar/dev/uploads/150eccc2-a748-4c60-bae5-14a4010342ac/7bf3ffb9-e4d9-4c72-aaaf-44d11f628840/exterior/32.jpg",
+                "label": "Right Front Diagonal"
+            },
+            "gst": 2590.0000000000036,
+            "body": "SUV",
+            "comingSoon": false,
+            "reserved": false,
+            "dapPriceEnabled": false,
+            "offer": null,
+            "exteriorImages": null,
+            "interiorImages": null,
+            "imperfectionImages": null,
+            "vehicleFeatures": null,
+            "vehicleSpecifications": null,
+            "dapPrice": null,
+            "inspectionObject": null,
+            "price": 0.0,
+            "odometerReading": 59597,
+            "ownerNumber": null,
+            "transmissionType": "Automatic",
+            "fuelType": "Petrol",
+            "seats": "5"
+        },
+        {
+            "appointmentId": "5869650757184",
+            "year": "2016",
+            "egc": 25690.0,
+            "estimatedPrice": 25690.0,
+            "tradeInAmount": null,
+            "personalised": false,
+            "emiDetails": {
+                "emi": 569.0,
+                "interestRate": 9.39,
+                "balloonPercentage": 0.0,
+                "defaultDownPayment": 500,
+                "lenderFee": 1489.0,
+                "comparisonRate": 12.15,
+                "emiPerWeek": 131.0,
+                "maxDownPayment": 20690.0,
+                "lenderMonthlyFee": 9.9,
+                "minDownPayment": 500,
+                "tenure": 5
+            },
+            "expressDelivery": null,
+            "cityCode": "AU_VIC_MEL",
+            "stateCode": "AU_VIC",
+            "state": "Victoria",
+            "make": "Kia",
+            "model": "Sorento",
+            "variant": "Si (4x2)",
+            "trim": null,
+            "specs": null,
+            "engineSize": null,
+            "driveType": "Front Wheel Drive",
+            "noOfCylinders": null,
+            "turbochargerSuperchargerAvailable": false,
+            "booked": false,
+            "listingActive": true,
+            "city": "Melbourne",
+            "promotion": "On sale",
+            "vin": "KNAPH814MH5293402",
+            "kbbAskingPrice": 23745,
+            "kbbAskingPriceRangeMin": 22296,
+            "kbbAskingPriceRangeMax": 25194,
+            "kbbValueProvidedOn": "06/29/2023",
+            "threeSixtyViewUrl": "https://au.viewer.cars24.com?id=62b393db4d9e718fecfbb184",
+            "threeSixtyViewAvailable": true,
+            "mediaSource": "helloAR",
+            "kerbWeight": 1875.0,
+            "mainImage": {
+                "path": "hello-ar/dev/uploads/62b393db4d9e718fecfbb184/1cceb766-2245-4374-b438-cd9cf9684b77/slot/Right-Front-Diagonal--45--Degree--View--1-.jpg",
+                "label": "Right Front Diagonal"
+            },
+            "gst": 2335.4545454545478,
+            "body": "SUV",
+            "comingSoon": false,
+            "reserved": false,
+            "dapPriceEnabled": false,
+            "offer": null,
+            "exteriorImages": null,
+            "interiorImages": null,
+            "imperfectionImages": null,
+            "vehicleFeatures": null,
+            "vehicleSpecifications": null,
+            "dapPrice": null,
+            "inspectionObject": null,
+            "price": 26490.0,
+            "odometerReading": 82862,
+            "ownerNumber": null,
+            "transmissionType": "Automatic",
+            "fuelType": "Petrol",
+            "seats": "7"
+        },
+        {
+            "appointmentId": "5848996565888",
+            "year": "2016",
+            "egc": 29490.0,
+            "estimatedPrice": 29490.0,
+            "tradeInAmount": null,
+            "personalised": false,
+            "emiDetails": {
+                "emi": 648.0,
+                "interestRate": 9.39,
+                "balloonPercentage": 0.0,
+                "defaultDownPayment": 500,
+                "lenderFee": 1489.0,
+                "comparisonRate": 12.15,
+                "emiPerWeek": 149.0,
+                "maxDownPayment": 24490.0,
+                "lenderMonthlyFee": 9.9,
+                "minDownPayment": 500,
+                "tenure": 5
+            },
+            "expressDelivery": null,
+            "cityCode": "AU_VIC_MEL",
+            "stateCode": "AU_VIC",
+            "state": "Victoria",
+            "make": "MINI",
+            "model": "Cooper",
+            "variant": "S Clubman",
+            "trim": null,
+            "specs": null,
+            "engineSize": null,
+            "driveType": "Front Wheel Drive",
+            "noOfCylinders": null,
+            "turbochargerSuperchargerAvailable": false,
+            "booked": false,
+            "listingActive": true,
+            "city": "Melbourne",
+            "promotion": "On sale",
+            "vin": "WMWLN720602D97562",
+            "kbbAskingPrice": 27310,
+            "kbbAskingPriceRangeMin": 25739,
+            "kbbAskingPriceRangeMax": 28880,
+            "kbbValueProvidedOn": "06/29/2023",
+            "threeSixtyViewUrl": "https://au.viewer.cars24.com?id=62b27f4930a5f9f6b2e1438e",
+            "threeSixtyViewAvailable": true,
+            "mediaSource": "helloAR",
+            "kerbWeight": 1332.0,
+            "mainImage": {
+                "path": "hello-ar/dev/uploads/62b27f4930a5f9f6b2e1438e/ab414e31-ad2d-4dde-9ce4-d128f871cb21/slot/Right-Front-Diagonal--45--Degree--View--10-.jpg",
+                "label": "Right Front Diagonal"
+            },
+            "gst": 2680.909090909092,
+            "body": "Wagon",
+            "comingSoon": false,
+            "reserved": false,
+            "dapPriceEnabled": false,
+            "offer": null,
+            "exteriorImages": null,
+            "interiorImages": null,
+            "imperfectionImages": null,
+            "vehicleFeatures": null,
+            "vehicleSpecifications": null,
+            "dapPrice": null,
+            "inspectionObject": null,
+            "price": 30990.0,
+            "odometerReading": 92728,
+            "ownerNumber": null,
+            "transmissionType": "Automatic",
+            "fuelType": "Petrol",
+            "seats": "5"
+        },
+        {
+            "appointmentId": "6111224555",
+            "year": "2018",
+            "egc": 34990.0,
+            "estimatedPrice": 34990.0,
+            "tradeInAmount": null,
+            "personalised": false,
+            "emiDetails": {
+                "emi": 769.0,
+                "interestRate": 9.39,
+                "balloonPercentage": 0.0,
+                "defaultDownPayment": 500,
+                "lenderFee": 1749.0,
+                "comparisonRate": 12.5,
+                "emiPerWeek": 177.0,
+                "maxDownPayment": 29990.0,
+                "lenderMonthlyFee": 9.9,
+                "minDownPayment": 500,
+                "tenure": 5
+            },
+            "expressDelivery": null,
+            "cityCode": "AU_VIC_MEL",
+            "stateCode": "AU_VIC",
+            "state": "Victoria",
+            "make": "Volkswagen",
+            "model": "Tiguan",
+            "variant": "162 Tsi Highline",
+            "trim": null,
+            "specs": null,
+            "engineSize": null,
+            "driveType": "All Wheel Drive",
+            "noOfCylinders": null,
+            "turbochargerSuperchargerAvailable": false,
+            "booked": false,
+            "listingActive": true,
+            "city": "Melbourne",
+            "promotion": "On sale",
+            "vin": "WVGZZZ5NZJW903325",
+            "kbbAskingPrice": 37613,
+            "kbbAskingPriceRangeMin": 35751,
+            "kbbAskingPriceRangeMax": 39476,
+            "kbbValueProvidedOn": "06/29/2023",
+            "threeSixtyViewUrl": "https://au.viewer.cars24.com?id=630c3817ac9e7cfff6646620",
+            "threeSixtyViewAvailable": true,
+            "mediaSource": "helloAR",
+            "kerbWeight": 1637.0,
+            "mainImage": {
+                "path": "hello-ar/dev/uploads/4d99549b-4c80-462a-894e-bba01bb761c2/e4ad44d0-3278-4c96-96f6-829979f78096/exterior/33.jpg",
+                "label": "Right Front Diagonal",
+                "type": "Exterior"
+            },
+            "gst": 3180.909090909092,
+            "body": "SUV",
+            "comingSoon": false,
+            "reserved": false,
+            "dapPriceEnabled": false,
+            "offer": null,
+            "exteriorImages": null,
+            "interiorImages": null,
+            "imperfectionImages": null,
+            "vehicleFeatures": null,
+            "vehicleSpecifications": null,
+            "dapPrice": null,
+            "inspectionObject": null,
+            "price": 35690.0,
+            "odometerReading": 84531,
+            "ownerNumber": null,
+            "transmissionType": "Automatic",
+            "fuelType": "Petrol",
+            "seats": "5"
+        },
+        {
+            "appointmentId": "9871411533696",
+            "year": "2020",
+            "egc": 32690.0,
+            "estimatedPrice": 32690.0,
+            "tradeInAmount": null,
+            "personalised": false,
+            "emiDetails": {
+                "emi": 719.0,
+                "interestRate": 9.29,
+                "balloonPercentage": 0.0,
+                "defaultDownPayment": 500,
+                "lenderFee": 1749.0,
+                "comparisonRate": 12.4,
+                "emiPerWeek": 166.0,
+                "maxDownPayment": 27690.0,
+                "lenderMonthlyFee": 9.9,
+                "minDownPayment": 500,
+                "tenure": 5
+            },
+            "expressDelivery": null,
+            "cityCode": "AU_QLD_BNE",
+            "stateCode": "AU_QLD",
+            "state": "Queensland",
+            "make": "Subaru",
+            "model": "Forester",
+            "variant": "2.5i (awd)",
+            "trim": null,
+            "specs": null,
+            "engineSize": null,
+            "driveType": "All Wheel Drive",
+            "noOfCylinders": null,
+            "turbochargerSuperchargerAvailable": false,
+            "booked": false,
+            "listingActive": true,
+            "city": "Brisbane",
+            "promotion": "Off sale",
+            "vin": "JF2SK9KL5MG059114",
+            "kbbAskingPrice": 38622,
+            "kbbAskingPriceRangeMin": 36735,
+            "kbbAskingPriceRangeMax": 40509,
+            "kbbValueProvidedOn": "06/23/2023",
+            "threeSixtyViewUrl": "https://au.viewer.cars24.com?id=6494fc6356f806f7b8154567",
+            "threeSixtyViewAvailable": true,
+            "mediaSource": "helloAR",
+            "kerbWeight": 1521.0,
+            "mainImage": {
+                "path": "hello-ar/dev/uploads/1621f67a-e6d8-4e92-8211-e489a7047263/a9f21fea-7915-411b-b1cd-2fc7960aa07e/exterior/32.jpg",
+                "label": "Right Front Diagonal"
+            },
+            "gst": 2971.818181818184,
+            "body": "SUV",
+            "comingSoon": false,
+            "reserved": false,
+            "dapPriceEnabled": false,
+            "offer": null,
+            "exteriorImages": null,
+            "interiorImages": null,
+            "imperfectionImages": null,
+            "vehicleFeatures": null,
+            "vehicleSpecifications": null,
+            "dapPrice": null,
+            "inspectionObject": null,
+            "price": 0.0,
+            "odometerReading": 58589,
+            "ownerNumber": null,
+            "transmissionType": "Automatic",
+            "fuelType": "Petrol",
+            "seats": "5"
+        },
+        {
+            "appointmentId": "5621876611456",
+            "year": "2015",
+            "egc": 35690.0,
+            "estimatedPrice": 35690.0,
+            "tradeInAmount": null,
+            "personalised": false,
+            "emiDetails": {
+                "emi": 787.0,
+                "interestRate": 9.59,
+                "balloonPercentage": 0.0,
+                "defaultDownPayment": 500,
+                "lenderFee": 1749.0,
+                "comparisonRate": 12.71,
+                "emiPerWeek": 181.0,
+                "maxDownPayment": 30690.0,
+                "lenderMonthlyFee": 9.9,
+                "minDownPayment": 500,
+                "tenure": 5
+            },
+            "expressDelivery": null,
+            "cityCode": "AU_QLD_BNE",
+            "stateCode": "AU_QLD",
+            "state": "Queensland",
+            "make": "BMW",
+            "model": "X4",
+            "variant": "Xdrive 20d",
+            "trim": null,
+            "specs": null,
+            "engineSize": null,
+            "driveType": "All Wheel Drive",
+            "noOfCylinders": null,
+            "turbochargerSuperchargerAvailable": false,
+            "booked": false,
+            "listingActive": true,
+            "city": "Brisbane",
+            "promotion": "Off sale",
+            "vin": "WBAXX120X00N45892",
+            "kbbAskingPrice": 37274,
+            "kbbAskingPriceRangeMin": 35420,
+            "kbbAskingPriceRangeMax": 39129,
+            "kbbValueProvidedOn": "06/23/2023",
+            "threeSixtyViewUrl": "https://au.viewer.cars24.com?id=6494f6934c63dba929e9be6e",
+            "threeSixtyViewAvailable": true,
+            "mediaSource": "helloAR",
+            "kerbWeight": 1750.0,
+            "mainImage": {
+                "path": "hello-ar/dev/uploads/75584c14-fc1d-49d1-bc0a-4d881190eaf1/22d07156-37d1-41ef-b411-111c39941ffb/exterior/33.jpg",
+                "label": "Right Front Diagonal"
+            },
+            "gst": 3244.545454545456,
+            "body": "SUV",
+            "comingSoon": false,
+            "reserved": false,
+            "dapPriceEnabled": false,
+            "offer": null,
+            "exteriorImages": null,
+            "interiorImages": null,
+            "imperfectionImages": null,
+            "vehicleFeatures": null,
+            "vehicleSpecifications": null,
+            "dapPrice": null,
+            "inspectionObject": null,
+            "price": 0.0,
+            "odometerReading": 103342,
+            "ownerNumber": null,
+            "transmissionType": "Automatic",
+            "fuelType": "Diesel",
+            "seats": "5"
+        },
+        {
+            "appointmentId": "6111227802",
+            "year": "2017",
+            "egc": 41890.0,
+            "estimatedPrice": 41890.0,
+            "tradeInAmount": null,
+            "personalised": false,
+            "emiDetails": {
+                "emi": 919.0,
+                "interestRate": 9.39,
+                "balloonPercentage": 0.0,
+                "defaultDownPayment": 500,
+                "lenderFee": 1999.0,
+                "comparisonRate": 12.85,
+                "emiPerWeek": 212.0,
+                "maxDownPayment": 36890.0,
+                "lenderMonthlyFee": 9.9,
+                "minDownPayment": 500,
+                "tenure": 5
+            },
+            "expressDelivery": null,
+            "cityCode": "AU_VIC_MEL",
+            "stateCode": "AU_VIC",
+            "state": "Victoria",
+            "make": "Volkswagen",
+            "model": "Golf",
+            "variant": "R",
+            "trim": null,
+            "specs": null,
+            "engineSize": null,
+            "driveType": "All Wheel Drive",
+            "noOfCylinders": null,
+            "turbochargerSuperchargerAvailable": false,
+            "booked": false,
+            "listingActive": true,
+            "city": "Melbourne",
+            "promotion": "On sale",
+            "vin": "WVWZZZAUZHW191453",
+            "kbbAskingPrice": 46348,
+            "kbbAskingPriceRangeMin": 44294,
+            "kbbAskingPriceRangeMax": 48401,
+            "kbbValueProvidedOn": "06/29/2023",
+            "threeSixtyViewUrl": "https://au.viewer.cars24.com?id=62941851a1ed0188b3d57f30",
+            "threeSixtyViewAvailable": true,
+            "mediaSource": "helloAR",
+            "kerbWeight": 1435.0,
+            "mainImage": {
+                "path": "hello-ar/dev/uploads/62941851a1ed0188b3d57f30/7df78c39-d1a7-4412-9b77-e6988babfa50/slot/Right-Front-Diagonal--45--Degree--View--7-.jpg",
+                "label": "Right Front Diagonal"
+            },
+            "gst": 3808.1818181818235,
+            "body": "Hatchback",
+            "comingSoon": false,
+            "reserved": false,
+            "dapPriceEnabled": false,
+            "offer": null,
+            "exteriorImages": null,
+            "interiorImages": null,
+            "imperfectionImages": null,
+            "vehicleFeatures": null,
+            "vehicleSpecifications": null,
+            "dapPrice": null,
+            "inspectionObject": null,
+            "price": 43290.0,
+            "odometerReading": 36030,
+            "ownerNumber": null,
+            "transmissionType": "Automatic",
+            "fuelType": "Petrol",
+            "seats": "5"
+        },
+        {
+            "appointmentId": "9789428476416",
+            "year": "2019",
+            "egc": 43990.0,
+            "estimatedPrice": 43990.0,
+            "tradeInAmount": null,
+            "personalised": false,
+            "emiDetails": {
+                "emi": 963.0,
+                "interestRate": 9.39,
+                "balloonPercentage": 0.0,
+                "defaultDownPayment": 500,
+                "lenderFee": 1999.0,
+                "comparisonRate": 12.85,
+                "emiPerWeek": 222.0,
+                "maxDownPayment": 38990.0,
+                "lenderMonthlyFee": 9.9,
+                "minDownPayment": 500,
+                "tenure": 5
+            },
+            "expressDelivery": null,
+            "cityCode": "AU_QLD_BNE",
+            "stateCode": "AU_QLD",
+            "state": "Queensland",
+            "make": "Isuzu",
+            "model": "MU-X",
+            "variant": "Ls-t (4x4)",
+            "trim": null,
+            "specs": null,
+            "engineSize": null,
+            "driveType": "4x4",
+            "noOfCylinders": null,
+            "turbochargerSuperchargerAvailable": false,
+            "booked": false,
+            "listingActive": true,
+            "city": "Brisbane",
+            "promotion": "Off sale",
+            "vin": "MPAUCS85GKT001501",
+            "kbbAskingPrice": 43940,
+            "kbbAskingPriceRangeMin": 41935,
+            "kbbAskingPriceRangeMax": 45945,
+            "kbbValueProvidedOn": "06/27/2023",
+            "threeSixtyViewUrl": "https://au.viewer.cars24.com?id=648fced5b6a6e943472cd024",
+            "threeSixtyViewAvailable": true,
+            "mediaSource": "helloAR",
+            "kerbWeight": 2157.0,
+            "mainImage": {
+                "path": "hello-ar/dev/uploads/e569d51c-f7cb-499f-a7e2-2897ce4d1c53/4fff730b-4e4d-45b8-9c7e-bd35d7412769/exterior/32.jpg",
+                "label": "Right Front Diagonal"
+            },
+            "gst": 3999.0909090909117,
+            "body": "SUV",
+            "comingSoon": false,
+            "reserved": false,
+            "dapPriceEnabled": false,
+            "offer": null,
+            "exteriorImages": null,
+            "interiorImages": null,
+            "imperfectionImages": null,
+            "vehicleFeatures": null,
+            "vehicleSpecifications": null,
+            "dapPrice": null,
+            "inspectionObject": null,
+            "price": 0.0,
+            "odometerReading": 133785,
+            "ownerNumber": null,
+            "transmissionType": "Automatic",
+            "fuelType": "Diesel",
+            "seats": "7"
+        },
+        {
+            "appointmentId": "9871459315392",
+            "year": "2020",
+            "egc": 32690.0,
+            "estimatedPrice": 32690.0,
+            "tradeInAmount": null,
+            "personalised": false,
+            "emiDetails": {
+                "emi": 719.0,
+                "interestRate": 9.29,
+                "balloonPercentage": 0.0,
+                "defaultDownPayment": 500,
+                "lenderFee": 1749.0,
+                "comparisonRate": 12.4,
+                "emiPerWeek": 166.0,
+                "maxDownPayment": 27690.0,
+                "lenderMonthlyFee": 9.9,
+                "minDownPayment": 500,
+                "tenure": 5
+            },
+            "expressDelivery": null,
+            "cityCode": "AU_QLD_BNE",
+            "stateCode": "AU_QLD",
+            "state": "Queensland",
+            "make": "Subaru",
+            "model": "Forester",
+            "variant": "2.5i (awd)",
+            "trim": null,
+            "specs": null,
+            "engineSize": null,
+            "driveType": "All Wheel Drive",
+            "noOfCylinders": null,
+            "turbochargerSuperchargerAvailable": false,
+            "booked": false,
+            "listingActive": true,
+            "city": "Brisbane",
+            "promotion": "Off sale",
+            "vin": "JF2SK9KL5MG056583",
+            "kbbAskingPrice": 38605,
+            "kbbAskingPriceRangeMin": 36718,
+            "kbbAskingPriceRangeMax": 40491,
+            "kbbValueProvidedOn": "06/26/2023",
+            "threeSixtyViewUrl": "https://au.viewer.cars24.com?id=6498e8e1165ed0397b8a1547",
+            "threeSixtyViewAvailable": true,
+            "mediaSource": "helloAR",
+            "kerbWeight": 1521.0,
+            "mainImage": {
+                "path": "hello-ar/dev/uploads/46322dee-bdaf-436f-83a1-6ac1d530bc99/ae3e07ad-d528-48fd-9405-0a841e5c3724/exterior/31.jpg",
+                "label": "Right Front Diagonal"
+            },
+            "gst": 2971.818181818184,
+            "body": "SUV",
+            "comingSoon": false,
+            "reserved": false,
+            "dapPriceEnabled": false,
+            "offer": null,
+            "exteriorImages": null,
+            "interiorImages": null,
+            "imperfectionImages": null,
+            "vehicleFeatures": null,
+            "vehicleSpecifications": null,
+            "dapPrice": null,
+            "inspectionObject": null,
+            "price": 0.0,
+            "odometerReading": 58729,
+            "ownerNumber": null,
+            "transmissionType": "Automatic",
+            "fuelType": "Petrol",
+            "seats": "5"
+        },
+        {
+            "appointmentId": "6111226005",
+            "year": "2017",
+            "egc": 38290.0,
+            "estimatedPrice": 38290.0,
+            "tradeInAmount": null,
+            "personalised": false,
+            "emiDetails": {
+                "emi": 838.0,
+                "interestRate": 9.39,
+                "balloonPercentage": 0.0,
+                "defaultDownPayment": 500,
+                "lenderFee": 1749.0,
+                "comparisonRate": 12.5,
+                "emiPerWeek": 193.0,
+                "maxDownPayment": 33290.0,
+                "lenderMonthlyFee": 9.9,
+                "minDownPayment": 500,
+                "tenure": 5
+            },
+            "expressDelivery": null,
+            "cityCode": "AU_VIC_MEL",
+            "stateCode": "AU_VIC",
+            "state": "Victoria",
+            "make": "Mercedes-benz",
+            "model": "C200",
+            "variant": "",
+            "trim": null,
+            "specs": null,
+            "engineSize": null,
+            "driveType": "Rear Wheel Drive",
+            "noOfCylinders": null,
+            "turbochargerSuperchargerAvailable": false,
+            "booked": false,
+            "listingActive": true,
+            "city": "Melbourne",
+            "promotion": "On sale",
+            "vin": "WDD2052422F560681",
+            "kbbAskingPrice": 43253,
+            "kbbAskingPriceRangeMin": 41263,
+            "kbbAskingPriceRangeMax": 45244,
+            "kbbValueProvidedOn": "06/29/2023",
+            "threeSixtyViewUrl": "https://au.viewer.cars24.com?id=628d82afe0b8ca36e9db778b",
+            "threeSixtyViewAvailable": true,
+            "mediaSource": "helloAR",
+            "kerbWeight": 1525.0,
+            "mainImage": {
+                "path": "hello-ar/dev/uploads/628d82afe0b8ca36e9db778b/0f7bcbb1-e946-4b96-a15c-9f768b1583ec/slot/Right-Front-Diagonal--45--Degree--View--10-.jpg",
+                "label": "Right Front Diagonal"
+            },
+            "gst": 3480.9090909090955,
+            "body": "Wagon",
+            "comingSoon": false,
+            "reserved": false,
+            "dapPriceEnabled": false,
+            "offer": null,
+            "exteriorImages": null,
+            "interiorImages": null,
+            "imperfectionImages": null,
+            "vehicleFeatures": null,
+            "vehicleSpecifications": null,
+            "dapPrice": null,
+            "inspectionObject": null,
+            "price": 39990.0,
+            "odometerReading": 69085,
+            "ownerNumber": null,
+            "transmissionType": "Automatic",
+            "fuelType": "Petrol",
+            "seats": "5"
+        }
+    ],
+    "selectedFilters": {
+        
+    },
+    "selectedSort": "releavance",
+    "metaContent": {
+        "title": "Buy Used Cars Online | 7 Day Trial | Cars24 Australia",
+        "description": "New way to buy used cars online. Browse from a wide range of used cars available in Australia. Every car receives free home delivery, 300-point inspection and 7 days trial.",
+        "params": {
+            "total": 663
+        },
+        "cityInfo": null,
+        "specialPageType": null
+    },
+    "personalised": false
+}
