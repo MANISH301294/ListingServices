@@ -37,6 +37,7 @@ public class ListingStepDefinition extends ListingUtils {
     double highWeight = 1504;
     double superWeight = 2504;
 
+
     String Engineconfiguration = "Diesel Twin Turbo";
 
     String Enginconfigure = "Diesel Twin Turbo 4";
