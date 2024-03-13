@@ -18,11 +18,11 @@ public class Details {
     private String appointmentId;
     private String year;
     private String modelYear;
-    private Double egc;
-    private Double tradeInAmount;
+    private double egc;
+    private double tradeInAmount;
     private Boolean personalised;
     private EmiDetail emiDetails;
-    private Boolean cityCode;
+    private String cityCode;
     private String stateCode;
     private String state;
     private String make;
@@ -51,15 +51,36 @@ public class Details {
     private String  kbbValueProvidedOn;
     private String  engineNo;
     private String  complianceDate;
-    private Double  kerbWeight;
-    private Double  gst;
+    private double  kerbWeight;
+    private double  gst;
     private int  category;
     private Boolean  oldTimer;
     private ArrayList<ExteriorImage> exteriorImages;
     private ArrayList<InteriorImage> interiorImages;
+    private ArrayList<Interior360Image> interior360Images;
+    private ArrayList<Exterior360Images> exterior360Images;
     private ArrayList<GalleryV2> galleryV2;
     private ArrayList<ImperfectionImages> imperfectionImages;
     private ArrayList<Highlights> highlights;
+    private ArrayList<Features> features;
+    private ArrayList<Specifications> specifications;
+    private ArrayList<Summary> summary;
+    private String ppsrReportLink;
+    private ArrayList<ServiceHistory> serviceHistory;
+    private String serviceHistoryText;
+    private Boolean reserved;
+    private Boolean displayTestDriveFlow;
+    private String wearAndTearGuideLink;
+    private Boolean displayBrakeSafetySection;
+    private PremiumFeatures premiumFeatures;
+    private Boolean dapPriceEnabled;
+    private ArrayList<SimilarModelCars> similarModelCars;
+    private ArrayList<SimilarModelCars> similarBudgetCars;
+    private ArrayList<MoreCars> moreCars;
+    private ArrayList<BuyWithConfidence> buyWithConfidence;
+    private double price;
+    private int odometerReading;
+
 
 
 

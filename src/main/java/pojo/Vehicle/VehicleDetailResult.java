@@ -1,6 +1,7 @@
 package pojo.Vehicle;
 
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import io.cucumber.core.internal.com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.*;
 
@@ -12,10 +13,11 @@ import java.util.Map;
 @Setter
 @NoArgsConstructor
 @AllArgsConstructor
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class VehicleDetailResult<T> {
 
     private Details detail;
-    private Map<String,String> config;
+    private Config config;
     private boolean personalised;
     private String ipDetectedState;
     private boolean eligibleForExtendedWarranty;

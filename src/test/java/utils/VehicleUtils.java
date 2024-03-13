@@ -11,9 +11,11 @@ import java.nio.file.Files;
 import java.nio.file.Paths;
 
 import static io.restassured.RestAssured.given;
-import static utils.Listingutils.getGlobalValue;
+import static io.restassured.RestAssured.sessionId;
+import static utils.ListingUtils.getGlobalValue;
 
-public class Vehicleutils {
+
+public class VehicleUtils {
      public static RequestSpecification VehicleReq;
     public static RequestSpecification VehiclesReq;
     public RequestSpecification vehilerequestspecification () throws IOException {
@@ -33,9 +35,8 @@ public class Vehicleutils {
     }
 
 
-    public RequestSpecification vehicleReq(String id) throws IOException {
-    VehicleReq =     given().spec(vehilerequestspecification())
-                .pathParam("appId",id);
+    public RequestSpecification vehicleReq() throws IOException {
+    VehicleReq =     given().spec(vehilerequestspecification());
 
     return VehicleReq;
 

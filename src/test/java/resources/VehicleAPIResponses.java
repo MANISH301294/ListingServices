@@ -1,17 +1,19 @@
 package resources;
 
-public enum APIResponses {
+public enum VehicleAPIResponses {
 
-    getLisitngAPI("/v1/vehicle/");
+    getVehicleAPI("/v1/vehicle/");
 
 
     String resources;
 
-    APIResponses(String resources) {
+    VehicleAPIResponses(String resources) {
         this.resources = resources;
     }
 
-    public String getResources() {
-        return resources;
+    @org.jetbrains.annotations.NotNull
+    @org.jetbrains.annotations.Contract(pure = true)
+    public String getResources(String id) {
+        return resources+id;
     }
 }

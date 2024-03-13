@@ -1,4 +1,4 @@
-package pojo.listing;
+package pojo.Vehicle;
 
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import lombok.Getter;

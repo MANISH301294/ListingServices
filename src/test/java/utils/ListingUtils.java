@@ -16,7 +16,7 @@ import java.util.Properties;
 import static io.restassured.RestAssured.given;
 
 
-public class Listingutils {
+public class ListingUtils extends VehicleUtils {
 
    public static RequestSpecification Listreq;
    public static RequestSpecification ListingReq;
@@ -45,12 +45,6 @@ public class Listingutils {
          return ListingReq;
     }
 
-    public RequestSpecification vehicleReq(String id) throws IOException
-    {
-        VehicleReq = given().spec(requestSpecification())
-                .pathParam("appPath",id);
-        return VehicleReq;
-    }
 
 
     public static   String  getGlobalValue(String Key) throws IOException {

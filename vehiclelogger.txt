@@ -1,0 +1,1901 @@
+Request method:	GET
+Request URI:	https://listing-service-au.c24.tech/v1/vehicle/12745358263488
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		authority=listing-service-au.c24.tech
+				accept=application/json, text/plain, */*
+				accept-language=en-GB,en-US;q=0.9,en;q=0.8
+				origin=https://www.cars24.com
+				referer=https://www.cars24.com/
+				x_country=AU
+				x_vehicle_type=CAR
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Tue, 20 Feb 2024 12:52:17 GMT
+Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+vary: Origin,Access-Control-Request-Method,Access-Control-Request-Headers
+access-control-allow-origin: https://www.cars24.com
+access-control-allow-credentials: true
+x-content-type-options: nosniff
+x-xss-protection: 1; mode=block
+cache-control: no-cache, no-store, max-age=0, must-revalidate
+pragma: no-cache
+expires: 0
+strict-transport-security: max-age=31536000 ; includeSubDomains
+x-frame-options: DENY
+x-envoy-upstream-service-time: 52
+CF-Cache-Status: DYNAMIC
+Set-Cookie: __cf_bm=mYjas_xVKlbF6xTY3SOCOo.7l5MeIk7RrQeYmpWbOPY-1708433537-1.0-AWFE4MgvYCAwBsJq6QLmHlYsB8igpkniI/GkymIWxgBGl9GCzGVN0//43K1wB4SBQ90cRqswZ3TsmtnzOkfc0xU=; path=/; expires=Tue, 20-Feb-24 13:22:17 GMT; domain=.c24.tech; HttpOnly; Secure; SameSite=None
+Server: cloudflare
+CF-RAY: 8586e2cb6e3a6044-SIN
+Content-Encoding: gzip
+
+{
+    "detail": {
+        "appointmentId": "12745358263488",
+        "year": "2016",
+        "modelYear": "2016",
+        "egc": 23990.0,
+        "estimatedPrice": 23990.0,
+        "tradeInAmount": 0.0,
+        "personalised": false,
+        "emiDetails": {
+            "emi": 541.0,
+            "interestRate": 9.99,
+            "balloonPercentage": 0.0,
+            "defaultDownPayment": 500,
+            "lenderFee": 1489.0,
+            "comparisonRate": 12.75,
+            "emiPerWeek": 124.0,
+            "maxDownPayment": 18990.0,
+            "lenderMonthlyFee": 9.9,
+            "maxLoanAmount": 100000,
+            "minDownPayment": 500,
+            "tenure": 5
+        },
+        "cityCode": "AU_VIC_MEL",
+        "stateCode": "AU_VIC",
+        "state": "Victoria",
+        "make": "Toyota",
+        "model": "RAV4",
+        "variant": "Gx (2wd)",
+        "transmissionType": "Automatic",
+        "color": "White",
+        "fuelType": "Petrol",
+        "bodyType": "SUV",
+        "booked": false,
+        "listingActive": true,
+        "city": "Melbourne",
+        "driveType": "Front Wheel Drive",
+        "shareUrl": "https://c24.best/maFAtX",
+        "turbochargerSuperchargerAvailable": false,
+        "mainImage": {
+            "path": "hello-ar/dev/uploads/923eeacd-7f09-44aa-ab74-18814c963092/dee0266f-3e8f-4cc2-9609-bf7ce2b05ca6/exterior/33.jpg",
+            "label": "Right Front Diagonal"
+        },
+        "threeSixtyViewUrl": "https://au.viewer.cars24.com?id=65c41c5ad887fcf14c8cb68f",
+        "threeSixtyViewAvailable": true,
+        "mediaSource": "helloAR",
+        "comingSoon": false,
+        "promotion": "Off sale",
+        "vin": "JTMZDREV20D083458",
+        "kbbAskingPrice": 25687,
+        "kbbAskingPriceRangeMin": 24170,
+        "kbbAskingPriceRangeMax": 27203,
+        "kbbValueProvidedOn": "02/16/2024",
+        "engineNo": "3ZRB926041",
+        "builtDate": "09/2016",
+        "complianceDate": "10/2016",
+        "buildMonth": "09",
+        "kerbWeight": 1520.0,
+        "gst": 2180.909090909092,
+        "category": 1,
+        "oldTimer": false,
+        "bootSpaceSeatsUp": "577",
+        "bootSpaceSeatsDown": "1655",
+        "exteriorImages": [
+            {
+                "label": "Right Front Diagonal (45- Degree) View",
+                "path": "hello-ar/dev/uploads/923eeacd-7f09-44aa-ab74-18814c963092/dee0266f-3e8f-4cc2-9609-bf7ce2b05ca6/exterior/33.jpg"
+            },
+            {
+                "label": "Front View",
+                "path": "hello-ar/dev/uploads/923eeacd-7f09-44aa-ab74-18814c963092/dee0266f-3e8f-4cc2-9609-bf7ce2b05ca6/exterior/39.jpg"
+            },
+            {
+                "label": "Left Front Diagonal (45- Degree) View",
+                "path": "hello-ar/dev/uploads/923eeacd-7f09-44aa-ab74-18814c963092/dee0266f-3e8f-4cc2-9609-bf7ce2b05ca6/exterior/45.jpg"
+            },
+            {
+                "label": "Left Side View",
+                "path": "hello-ar/dev/uploads/923eeacd-7f09-44aa-ab74-18814c963092/dee0266f-3e8f-4cc2-9609-bf7ce2b05ca6/exterior/56.jpg"
+            },
+            {
+                "label": "Left Back Diagonal (45- Degree) View",
+                "path": "hello-ar/dev/uploads/923eeacd-7f09-44aa-ab74-18814c963092/dee0266f-3e8f-4cc2-9609-bf7ce2b05ca6/exterior/67.jpg"
+            },
+            {
+                "label": "Back/Rear View",
+                "path": "hello-ar/dev/uploads/923eeacd-7f09-44aa-ab74-18814c963092/dee0266f-3e8f-4cc2-9609-bf7ce2b05ca6/exterior/2.jpg"
+            },
+            {
+                "label": "Right Back Diagonal (45- Degree) View",
+                "path": "hello-ar/dev/uploads/923eeacd-7f09-44aa-ab74-18814c963092/dee0266f-3e8f-4cc2-9609-bf7ce2b05ca6/exterior/11.jpg"
+            },
+            {
+                "label": "Right Side View",
+                "path": "hello-ar/dev/uploads/923eeacd-7f09-44aa-ab74-18814c963092/dee0266f-3e8f-4cc2-9609-bf7ce2b05ca6/exterior/22.jpg"
+            },
+            {
+                "label": "Open Bonnet (Engine)",
+                "path": "hello-ar/dev/uploads/923eeacd-7f09-44aa-ab74-18814c963092/6ef1ae1f-0f72-4340-b8e8-c3662daed433/slot/camera-Open-Bonnet--Engine-.jpg"
+            },
+            {
+                "label": "Right Front Wheel",
+                "path": "hello-ar/dev/uploads/923eeacd-7f09-44aa-ab74-18814c963092/0267bfd6-28e0-408d-bbed-62f55061f0bb/slot/camera-Right-Front-Wheel.jpg"
+            },
+            {
+                "label": "Roof/Sunroof View",
+                "path": "hello-ar/dev/uploads/923eeacd-7f09-44aa-ab74-18814c963092/167f1a4a-9212-4594-a8b4-4409899370bb/slot/camera-Roof-Sunroof-View.jpg"
+            },
+            {
+                "label": "Badge (Boot Left Side)",
+                "path": "hello-ar/dev/uploads/923eeacd-7f09-44aa-ab74-18814c963092/1f79b312-595d-4de8-a3ee-948ff1b718a4/slot/camera-Badge--Boot-Left-Side-.jpg"
+            }
+        ],
+        "interiorImages": [
+            {
+                "label": "Boot Inside View",
+                "path": "hello-ar/dev/uploads/923eeacd-7f09-44aa-ab74-18814c963092/d6109adb-4cf2-4596-87b2-8e581f64944d/slot/camera-Boot-Inside-View.jpg",
+                "additionalInfo": [
+                    
+                ]
+            },
+            {
+                "label": "Boot Inside View with Luggage",
+                "path": "hello-ar/dev/uploads/923eeacd-7f09-44aa-ab74-18814c963092/906b60a1-fa22-4271-adf8-59b8e2f5aad6/slot/camera-Boot-Inside-View-with-Luggage.jpg",
+                "additionalInfo": [
+                    {
+                        "data": {
+                            "title": "Boot Space",
+                            "desc": "40 litres | (L) 57cm x (W) 36cm x (H) 23cm",
+                            "descKey": "*carry-on bag dimensions are:",
+                            "specification": [
+                                {
+                                    "title": "Seats Up",
+                                    "value": "577 Litres"
+                                },
+                                {
+                                    "title": "Seats Down",
+                                    "value": "1655 Litres"
+                                }
+                            ],
+                            "specificationHistory": [
+                                
+                            ]
+                        }
+                    }
+                ]
+            },
+            {
+                "label": "Right Side Rear Door Cabin View",
+                "path": "hello-ar/dev/uploads/923eeacd-7f09-44aa-ab74-18814c963092/22c15ff3-6e1b-45c5-99de-6d1d3c6775e9/slot/camera-Right-Side-Rear-Door-Cabin-View.jpg",
+                "additionalInfo": [
+                    
+                ]
+            },
+            {
+                "label": "Dashboard View",
+                "path": "hello-ar/dev/uploads/923eeacd-7f09-44aa-ab74-18814c963092/cb244f65-ffa7-4163-bb39-f303b44dab15/slot/camera-Dashboard-View.jpg",
+                "additionalInfo": [
+                    
+                ]
+            },
+            {
+                "label": "Gear Lever ",
+                "path": "hello-ar/dev/uploads/923eeacd-7f09-44aa-ab74-18814c963092/08936157-53c1-44c1-9e12-2ce048c1d376/slot/camera-Gear-Lever-.jpg",
+                "additionalInfo": [
+                    
+                ]
+            },
+            {
+                "label": "Steering Wheel Close-up",
+                "path": "hello-ar/dev/uploads/923eeacd-7f09-44aa-ab74-18814c963092/123e0a8b-5acc-40d3-b8e5-bfcb5efe9282/slot/camera-Steering-Wheel-Close-up.jpg",
+                "additionalInfo": [
+                    
+                ]
+            },
+            {
+                "label": "Infotainment System",
+                "path": "hello-ar/dev/uploads/923eeacd-7f09-44aa-ab74-18814c963092/08bd3194-c443-4ad7-9cb7-57f0af5f5466/slot/camera-Infotainment-System.jpg",
+                "additionalInfo": [
+                    
+                ]
+            },
+            {
+                "label": "Center Console",
+                "path": "hello-ar/dev/uploads/923eeacd-7f09-44aa-ab74-18814c963092/45c27d3c-da67-4b27-b65d-9b7f4e6bbffd/slot/camera-Center-Console.jpg",
+                "additionalInfo": [
+                    
+                ]
+            },
+            {
+                "label": "Right Side Front Door Cabin View",
+                "path": "hello-ar/dev/uploads/923eeacd-7f09-44aa-ab74-18814c963092/665cd8e5-f73d-40d2-9aec-acccbe96319d/slot/camera-Right-Side-Front-Door-Cabin-View.jpg",
+                "additionalInfo": [
+                    
+                ]
+            },
+            {
+                "label": "Speaker View",
+                "path": "hello-ar/dev/uploads/923eeacd-7f09-44aa-ab74-18814c963092/867196d4-cc0b-4193-b3f9-496575f5f1d5/slot/camera-Speaker-View.jpg",
+                "additionalInfo": [
+                    
+                ]
+            },
+            {
+                "label": "Drivers Side Door Panel Controls",
+                "path": "hello-ar/dev/uploads/923eeacd-7f09-44aa-ab74-18814c963092/ba849993-c84e-4eca-a1c2-27affc74ce2a/slot/camera-Drivers-Side-Door-Panel-Controls.jpg",
+                "additionalInfo": [
+                    
+                ]
+            },
+            {
+                "label": "Drivers Side Adjustment Panel",
+                "path": "hello-ar/dev/uploads/923eeacd-7f09-44aa-ab74-18814c963092/e0071d7e-9496-48cf-879b-bddbdf54dff7/slot/camera-Drivers-Side-Adjustment-Panel.jpg",
+                "additionalInfo": [
+                    
+                ]
+            },
+            {
+                "label": "Cruise Control",
+                "path": "hello-ar/dev/uploads/923eeacd-7f09-44aa-ab74-18814c963092/797ee4ca-152c-4222-b9c7-6b741738516d/slot/camera-Cruise-Control.jpg",
+                "additionalInfo": [
+                    
+                ]
+            },
+            {
+                "label": "Odometer View",
+                "path": "hello-ar/dev/uploads/923eeacd-7f09-44aa-ab74-18814c963092/f29ce7bd-1549-4731-a2a7-94892e4d17b1/slot/camera-Odometer-View.jpg",
+                "additionalInfo": [
+                    
+                ]
+            },
+            {
+                "label": "Parking Camera",
+                "path": "hello-ar/dev/uploads/923eeacd-7f09-44aa-ab74-18814c963092/eff9f9f9-d75b-4878-aeef-a46786119c21/slot/camera-Parking-Camera.jpg",
+                "additionalInfo": [
+                    
+                ]
+            },
+            {
+                "label": "Key Close-up",
+                "path": "hello-ar/dev/uploads/923eeacd-7f09-44aa-ab74-18814c963092/1064616d-a7f9-4cd8-94dd-27f2519f27b6/slot/camera-Key-Close-up.jpg",
+                "additionalInfo": [
+                    
+                ]
+            },
+            {
+                "label": "Service History",
+                "path": "hello-ar/dev/uploads/923eeacd-7f09-44aa-ab74-18814c963092/cb09e751-f191-4674-a1e6-cc15806ff205/slot/camera-Service-History.jpg",
+                "additionalInfo": [
+                    
+                ]
+            }
+        ],
+        "galleryV2": [
+            {
+                "path": "hello-ar/dev/uploads/923eeacd-7f09-44aa-ab74-18814c963092/cb244f65-ffa7-4163-bb39-f303b44dab15/slot/camera-Dashboard-View.jpg",
+                "label": "Dashboard View"
+            },
+            {
+                "path": "hello-ar/dev/uploads/923eeacd-7f09-44aa-ab74-18814c963092/906b60a1-fa22-4271-adf8-59b8e2f5aad6/slot/camera-Boot-Inside-View-with-Luggage.jpg",
+                "label": "Boot Inside View with Luggage"
+            },
+            {
+                "path": "hello-ar/dev/uploads/923eeacd-7f09-44aa-ab74-18814c963092/cb09e751-f191-4674-a1e6-cc15806ff205/slot/camera-Service-History.jpg",
+                "label": "Service History"
+            },
+            {
+                "path": "hello-ar/dev/uploads/923eeacd-7f09-44aa-ab74-18814c963092/08bd3194-c443-4ad7-9cb7-57f0af5f5466/slot/camera-Infotainment-System.jpg",
+                "label": "Infotainment System"
+            },
+            {
+                "path": "hello-ar/dev/uploads/923eeacd-7f09-44aa-ab74-18814c963092/f29ce7bd-1549-4731-a2a7-94892e4d17b1/slot/camera-Odometer-View.jpg",
+                "label": "Odometer View"
+            },
+            {
+                "path": "hello-ar/dev/uploads/923eeacd-7f09-44aa-ab74-18814c963092/1064616d-a7f9-4cd8-94dd-27f2519f27b6/slot/camera-Key-Close-up.jpg",
+                "label": "Key Close-up"
+            },
+            {
+                "path": "hello-ar/dev/uploads/923eeacd-7f09-44aa-ab74-18814c963092/22c15ff3-6e1b-45c5-99de-6d1d3c6775e9/slot/camera-Right-Side-Rear-Door-Cabin-View.jpg",
+                "label": "Right Side Rear Door Cabin View"
+            },
+            {
+                "label": "Open Bonnet (Engine)",
+                "path": "hello-ar/dev/uploads/923eeacd-7f09-44aa-ab74-18814c963092/6ef1ae1f-0f72-4340-b8e8-c3662daed433/slot/camera-Open-Bonnet--Engine-.jpg"
+            },
+            {
+                "path": "hello-ar/dev/uploads/923eeacd-7f09-44aa-ab74-18814c963092/ba849993-c84e-4eca-a1c2-27affc74ce2a/slot/camera-Drivers-Side-Door-Panel-Controls.jpg",
+                "label": "Drivers Side Door Panel Controls"
+            },
+            {
+                "path": "hello-ar/dev/uploads/923eeacd-7f09-44aa-ab74-18814c963092/eff9f9f9-d75b-4878-aeef-a46786119c21/slot/camera-Parking-Camera.jpg",
+                "label": "Parking Camera"
+            },
+            {
+                "path": "hello-ar/dev/uploads/923eeacd-7f09-44aa-ab74-18814c963092/797ee4ca-152c-4222-b9c7-6b741738516d/slot/camera-Cruise-Control.jpg",
+                "label": "Cruise Control"
+            }
+        ],
+        "imperfectionImages": [
+            {
+                "tag": "Lights Tail lights LHS",
+                "label": "Lights Tail lights LHS Fade",
+                "path": "hello-ar/dev/uploads/923eeacd-7f09-44aa-ab74-18814c963092/79c7445f-a924-4b83-969a-dfa952a96e3d/slot/camera-82bc7ed4-7c5b-4442-a2e4-7cf8876572e4.jpg"
+            },
+            {
+                "tag": "Lights Tail lights RHS",
+                "label": "Lights Tail lights RHS Fade",
+                "path": "hello-ar/dev/uploads/923eeacd-7f09-44aa-ab74-18814c963092/c63eb83e-e167-4178-a29b-10624835ffa1/slot/camera-dfe2326b-44d3-41f6-a626-6b301a6fb654.jpg"
+            },
+            {
+                "tag": "Bumper Front",
+                "label": "Bumper Front Chip",
+                "path": "hello-ar/dev/uploads/923eeacd-7f09-44aa-ab74-18814c963092/73fd5dd7-a01c-41b0-a134-fd3f1e14c5d0/slot/camera-18ae894d-d4a2-4b37-9c04-09b56f5c20b2.jpg"
+            }
+        ],
+        "highlights": [
+            {
+                "title": "Odometer",
+                "key": "odometer",
+                "status": 2,
+                "value": "77,962 km"
+            },
+            {
+                "title": "Transmission",
+                "key": "transmission",
+                "status": 2,
+                "value": "Automatic"
+            },
+            {
+                "title": "Fuel Type",
+                "key": "fuel",
+                "status": 2,
+                "value": "Petrol"
+            },
+            {
+                "title": "Engine",
+                "key": "engine",
+                "status": 2,
+                "value": "4cyl 2L Inline 4 Petrol"
+            },
+            {
+                "title": "Drive Type",
+                "key": "driveType",
+                "status": 2,
+                "value": "Front Wheel Drive"
+            }
+        ],
+        "features": [
+            {
+                "title": "Performance and Economy",
+                "key": "performanceAndEconomy",
+                "status": 4,
+                "child": [
+                    {
+                        "title": "Torque",
+                        "key": "torque",
+                        "status": 2,
+                        "value": "187Nm @3600rpm"
+                    },
+                    {
+                        "title": "Cruise Control",
+                        "key": "CC",
+                        "status": 2,
+                        "value": "Cruise Control"
+                    },
+                    {
+                        "title": "Engine",
+                        "key": "IM",
+                        "status": 2,
+                        "value": "Engine Immobiliser"
+                    },
+                    {
+                        "title": "Trip Computer",
+                        "key": "TC",
+                        "status": 2,
+                        "value": "Trip Computer"
+                    },
+                    {
+                        "title": "ANCAP",
+                        "key": "ancap",
+                        "status": 2,
+                        "value": "5.0"
+                    },
+                    {
+                        "title": "CO2Emission",
+                        "key": "co2Emission",
+                        "status": 2,
+                        "value": "173 g/km"
+                    },
+                    {
+                        "title": "Steering",
+                        "key": "steering",
+                        "status": 2,
+                        "value": "Rack & Pinion - Power Assisted"
+                    }
+                ]
+            },
+            {
+                "title": "Safety and Security",
+                "key": "safetyAndSecurity",
+                "status": 4,
+                "child": [
+                    {
+                        "title": "Front Brakes",
+                        "key": "frontBrakes",
+                        "status": 2,
+                        "value": "Disc - Ventilated"
+                    },
+                    {
+                        "title": "Rear Brakes",
+                        "key": "rearBrakes",
+                        "status": 2,
+                        "value": "Disc"
+                    },
+                    {
+                        "title": "Air Bags",
+                        "key": "ABB",
+                        "status": 2,
+                        "value": "Dual Front Airbags Package"
+                    },
+                    {
+                        "title": "Brakes",
+                        "key": "ABS",
+                        "status": 2,
+                        "value": "Anti-lock Braking"
+                    },
+                    {
+                        "title": "Central Locking",
+                        "key": "CLR",
+                        "status": 2,
+                        "value": "Central Locking Remote Control"
+                    },
+                    {
+                        "title": "Brake System",
+                        "key": "EBD",
+                        "status": 2,
+                        "value": "Electronic Brake Force Distribution"
+                    },
+                    {
+                        "title": "Air Bags",
+                        "key": "HAB",
+                        "status": 2,
+                        "value": "Head Airbags"
+                    },
+                    {
+                        "title": "Hill Holder",
+                        "key": "HH",
+                        "status": 2,
+                        "value": "Hill Holder"
+                    },
+                    {
+                        "title": "Air Bags",
+                        "key": "SAB",
+                        "status": 2,
+                        "value": "Side Airbags"
+                    },
+                    {
+                        "title": "SeatBelts",
+                        "key": "SBPT",
+                        "status": 2,
+                        "value": "Seatbelts - Pre-tensioners Front Seats"
+                    },
+                    {
+                        "title": "Stability Program",
+                        "key": "TCS",
+                        "status": 2,
+                        "value": "Traction Control System"
+                    }
+                ]
+            },
+            {
+                "title": "Comfort and Convenience",
+                "key": "comfortAndConvenience",
+                "status": 4,
+                "child": [
+                    {
+                        "title": "Camera",
+                        "key": "RVC",
+                        "status": 2,
+                        "value": "Reversing Camera"
+                    },
+                    {
+                        "title": "Child Seat Anchor Points",
+                        "key": "CSAP",
+                        "status": 1
+                    },
+                    {
+                        "title": "Hill Holder",
+                        "key": "HH",
+                        "status": 1
+                    },
+                    {
+                        "title": "Power Steering",
+                        "key": "PS",
+                        "status": 1
+                    },
+                    {
+                        "title": "Mobile Phone Connectivity",
+                        "key": "MPH",
+                        "status": 1
+                    },
+                    {
+                        "title": "Power Windows",
+                        "key": "PW",
+                        "status": 1
+                    },
+                    {
+                        "title": "Central Locking Remote Control",
+                        "key": "CLR",
+                        "status": 1
+                    },
+                    {
+                        "title": "Centre Courtesy/Dome Light/s",
+                        "key": "CDL",
+                        "status": 1
+                    },
+                    {
+                        "title": "12 Volt Power Outlet",
+                        "key": "12VO",
+                        "status": 1
+                    },
+                    {
+                        "title": "Bottle Holders - Front & Rear",
+                        "key": "BHFR",
+                        "status": 1
+                    },
+                    {
+                        "title": "Driver Foot Rest",
+                        "key": "DFR",
+                        "status": 1
+                    },
+                    {
+                        "title": "Sunvisors with Vanity Mirrors & Illumination",
+                        "key": "SVMI",
+                        "status": 1
+                    },
+                    {
+                        "title": "Multi-function Steering Wheel",
+                        "key": "MFSW",
+                        "status": 1
+                    },
+                    {
+                        "title": "Body Coloured Exterior Door Handles",
+                        "key": "BCDH",
+                        "status": 1
+                    },
+                    {
+                        "title": "AUX/USB Input Socket",
+                        "key": "AUSB",
+                        "status": 1
+                    },
+                    {
+                        "title": "Roof Rails",
+                        "key": "RFR",
+                        "status": 1
+                    },
+                    {
+                        "title": "High Mounted Rear Stop Light",
+                        "key": "HSL",
+                        "status": 1
+                    },
+                    {
+                        "title": "Exterior Mirrors - Heated",
+                        "key": "EMH",
+                        "status": 1
+                    },
+                    {
+                        "title": "Air Conditioning",
+                        "key": "AC",
+                        "status": 1
+                    },
+                    {
+                        "title": "Body Coloured Front Bumper",
+                        "key": "BCFB",
+                        "status": 1
+                    },
+                    {
+                        "title": "Airbag - Knee Driver",
+                        "key": "ABKD",
+                        "status": 1
+                    },
+                    {
+                        "title": "Engine Immobiliser",
+                        "key": "IM",
+                        "status": 1
+                    },
+                    {
+                        "title": "Trailer Stability Control",
+                        "key": "TSC",
+                        "status": 1
+                    },
+                    {
+                        "title": "Vehicle Stability Control",
+                        "key": "VSC",
+                        "status": 1
+                    },
+                    {
+                        "title": "Illuminated - Entry/Exit with Delayed Fade",
+                        "key": "IED",
+                        "status": 1
+                    },
+                    {
+                        "title": "Seatbelts - Load Limiters Front Seats",
+                        "key": "SBLL",
+                        "status": 1
+                    },
+                    {
+                        "title": "Seatbelts - Height Adjustable Front Seats",
+                        "key": "SBHA",
+                        "status": 1
+                    },
+                    {
+                        "title": "Seatbelts - Lap/Sash for All Seats",
+                        "key": "SBLS",
+                        "status": 1
+                    },
+                    {
+                        "title": "Rear Centre Armrest",
+                        "key": "RCA",
+                        "status": 1
+                    },
+                    {
+                        "title": "Rear Wiper/Washer",
+                        "key": "RWW",
+                        "status": 1
+                    },
+                    {
+                        "title": "Daytime Running Lights - LED",
+                        "key": "DRLS",
+                        "status": 1
+                    },
+                    {
+                        "title": "Side Airbags",
+                        "key": "SAB",
+                        "status": 1
+                    },
+                    {
+                        "title": "Seatbelts - Pre-tensioners Front Seats",
+                        "key": "SBPT",
+                        "status": 1
+                    },
+                    {
+                        "title": "Body Coloured Exterior Mirrors",
+                        "key": "BCEM",
+                        "status": 1
+                    },
+                    {
+                        "title": "Dual Front Airbags Package",
+                        "key": "ABB",
+                        "status": 1
+                    },
+                    {
+                        "title": "Carpet Floor Covering",
+                        "key": "CFC",
+                        "status": 1
+                    },
+                    {
+                        "title": "Rear Spoiler",
+                        "key": "RS",
+                        "status": 1
+                    },
+                    {
+                        "title": "Antenna - Roof-mounted Shark Fin type",
+                        "key": "ARS",
+                        "status": 1
+                    },
+                    {
+                        "title": "Radio CD with 6 Speakers",
+                        "key": "RCD6",
+                        "status": 1
+                    },
+                    {
+                        "title": "Traction Control System",
+                        "key": "TCS",
+                        "status": 1
+                    },
+                    {
+                        "title": "Electronic Brake Force Distribution",
+                        "key": "EBD",
+                        "status": 1
+                    },
+                    {
+                        "title": "Map/Reading Lights - Front",
+                        "key": "MRL",
+                        "status": 1
+                    },
+                    {
+                        "title": "Adjustable Front Seats - Manual",
+                        "key": "AFM",
+                        "status": 1
+                    },
+                    {
+                        "title": "Grab Handles - Front & Rear",
+                        "key": "GHFR",
+                        "status": 1
+                    },
+                    {
+                        "title": "Seatback Pockets - Front Seats",
+                        "key": "SPFS",
+                        "status": 1
+                    },
+                    {
+                        "title": "Parking Distance Control Rear",
+                        "key": "PDC",
+                        "status": 1
+                    },
+                    {
+                        "title": "Anti-lock Braking",
+                        "key": "ABS",
+                        "status": 1
+                    },
+                    {
+                        "title": "Cargo Cover",
+                        "key": "CGC",
+                        "status": 1
+                    },
+                    {
+                        "title": "Cruise Control",
+                        "key": "CC",
+                        "status": 1
+                    },
+                    {
+                        "title": "Spare Wheel - Space Saver/Temporary",
+                        "key": "SWSS",
+                        "status": 1
+                    },
+                    {
+                        "title": "Adjustable Steering Wheel - Tilt & Telescopic",
+                        "key": "ASW",
+                        "status": 1
+                    },
+                    {
+                        "title": "Remote Boot/Hatch Release",
+                        "key": "RCBR",
+                        "status": 1
+                    },
+                    {
+                        "title": "Head Airbags",
+                        "key": "HAB",
+                        "status": 1
+                    },
+                    {
+                        "title": "Headrests - Adjustable on All Seats",
+                        "key": "HAA",
+                        "status": 1
+                    },
+                    {
+                        "title": "Intermittent Wipers - Variable",
+                        "key": "IWV",
+                        "status": 1
+                    },
+                    {
+                        "title": "LED Headlights",
+                        "key": "LED",
+                        "status": 1
+                    },
+                    {
+                        "title": "Cargo Net on Floor",
+                        "key": "CGN",
+                        "status": 1
+                    },
+                    {
+                        "title": "Multi-function Control Screen",
+                        "key": "MFCS",
+                        "status": 1
+                    },
+                    {
+                        "title": "Power Mirrors With Indicators",
+                        "key": "PMI",
+                        "status": 1
+                    },
+                    {
+                        "title": "Cup Holders - Front & Rear",
+                        "key": "CHFR",
+                        "status": 1
+                    },
+                    {
+                        "title": "Trip Computer",
+                        "key": "TC",
+                        "status": 1
+                    },
+                    {
+                        "title": "Steering Wheel - Urethane Type",
+                        "key": "SWU",
+                        "status": 1
+                    },
+                    {
+                        "title": "Cloth Trim",
+                        "key": "CT",
+                        "status": 1
+                    },
+                    {
+                        "title": "Split Fold Rear Seat",
+                        "key": "SFRS",
+                        "status": 1
+                    },
+                    {
+                        "title": "Brake Assist",
+                        "key": "BAS",
+                        "status": 1
+                    },
+                    {
+                        "title": "Sunglass Holder",
+                        "key": "SGH",
+                        "status": 1
+                    },
+                    {
+                        "title": "MP3 Compatible Audio/CD Player",
+                        "key": "MP3C",
+                        "status": 1
+                    },
+                    {
+                        "title": "Door Pockets - Front & Rear",
+                        "key": "DPFR",
+                        "status": 1
+                    },
+                    {
+                        "title": "Centre Console Box - Multi-purpose",
+                        "key": "CLE",
+                        "status": 1
+                    },
+                    {
+                        "title": "Reversing Camera",
+                        "key": "RVC",
+                        "status": 1
+                    },
+                    {
+                        "title": "Digital Clock",
+                        "key": "DC",
+                        "status": 1
+                    },
+                    {
+                        "title": "Rear Lights - LED",
+                        "key": "RLED",
+                        "status": 1
+                    }
+                ]
+            },
+            {
+                "title": "Instruments and Controls",
+                "key": "instrumentsAndControls",
+                "status": 4,
+                "child": [
+                    {
+                        "title": "Audio Visual Input",
+                        "key": "CD",
+                        "status": 2,
+                        "value": "Centre Courtesy/Dome Light/s"
+                    },
+                    {
+                        "title": "Mirrors",
+                        "key": "PMI",
+                        "status": 2,
+                        "value": "Power Mirrors With Indicators"
+                    },
+                    {
+                        "title": "Steering",
+                        "key": "PS",
+                        "status": 2,
+                        "value": "Power Steering"
+                    },
+                    {
+                        "title": "Windows",
+                        "key": "PW",
+                        "status": 2,
+                        "value": "Power Windows"
+                    },
+                    {
+                        "title": "Audio Visual Input",
+                        "key": "RCD",
+                        "status": 2,
+                        "value": "Radio CD with 6 Speakers"
+                    }
+                ]
+            }
+        ],
+        "specifications": [
+            {
+                "title": "Color",
+                "key": "color",
+                "status": 2,
+                "value": "White"
+            },
+            {
+                "title": "Type",
+                "key": "vehicleType",
+                "status": 2,
+                "value": "Light Commercial Vehicle"
+            },
+            {
+                "title": "VIN",
+                "key": "vin",
+                "status": 2,
+                "value": "JTMZDREV20D083458"
+            },
+            {
+                "title": "Engine",
+                "key": "engine",
+                "status": 4,
+                "child": [
+                    {
+                        "title": "Engine Size (L)",
+                        "key": "engineSize",
+                        "status": 2,
+                        "value": "2 L"
+                    },
+                    {
+                        "title": "Torque (NM) @ TorqueRPM",
+                        "key": "torque",
+                        "status": 2,
+                        "value": "187Nm @ 3600rpm"
+                    },
+                    {
+                        "title": "Power (kW) @ KWRpm",
+                        "key": "power",
+                        "status": 2,
+                        "value": "107kW @ 6200rpm"
+                    },
+                    {
+                        "title": "Engine Config",
+                        "key": "engineConfiguration",
+                        "status": 2,
+                        "value": "Inline 4"
+                    },
+                    {
+                        "title": "Cylinders",
+                        "key": "Cylinders",
+                        "status": 2,
+                        "value": "4"
+                    },
+                    {
+                        "title": "Engine Size (cc)",
+                        "key": "engineSizeCC",
+                        "status": 2,
+                        "value": "1987 cc"
+                    },
+                    {
+                        "title": "Camshaft",
+                        "key": "camshaft",
+                        "status": 2,
+                        "value": "VARIABLE DOUBLE OVERHEAD CAM"
+                    },
+                    {
+                        "title": "Compression Ratio",
+                        "key": "compressionRatio",
+                        "status": 2,
+                        "value": "10"
+                    },
+                    {
+                        "title": "Valves",
+                        "key": "valves",
+                        "status": 2,
+                        "value": "16"
+                    },
+                    {
+                        "title": "Engine Code",
+                        "key": "Engine_Number",
+                        "status": 2,
+                        "value": "3ZRB926041"
+                    },
+                    {
+                        "title": "Power to wt ratio",
+                        "key": "powerToWeightRatio",
+                        "status": 2,
+                        "value": "70.39 kW/t"
+                    }
+                ]
+            },
+            {
+                "title": "Fuel",
+                "key": "fuel",
+                "status": 4,
+                "child": [
+                    {
+                        "title": "Fuel Capacity",
+                        "key": "fuelCapacity",
+                        "status": 2,
+                        "value": "60.0 litres"
+                    },
+                    {
+                        "title": "GreenHouse Rating",
+                        "key": "greenHouseRating",
+                        "status": 2,
+                        "value": "7.0"
+                    },
+                    {
+                        "title": "Air Pollution Rating",
+                        "key": "airPollutionRating",
+                        "status": 2,
+                        "value": "6.5"
+                    }
+                ]
+            },
+            {
+                "title": "Tyres",
+                "key": "tyres",
+                "status": 4,
+                "child": [
+                    {
+                        "title": "Front Rim",
+                        "key": "frontRim",
+                        "status": 2,
+                        "value": "6.5x17"
+                    },
+                    {
+                        "title": "Rear Rim",
+                        "key": "rearRim",
+                        "status": 2,
+                        "value": "6.5x17"
+                    },
+                    {
+                        "title": "Front Tyre",
+                        "key": "frontTyre",
+                        "status": 2,
+                        "value": "225/65 R17"
+                    },
+                    {
+                        "title": "Rear Tyre",
+                        "key": "rearTyre",
+                        "status": 2,
+                        "value": "225/65 R17"
+                    }
+                ]
+            },
+            {
+                "title": "Dimensions",
+                "key": "dimensions",
+                "status": 4,
+                "child": [
+                    {
+                        "title": "Height",
+                        "key": "height",
+                        "status": 2,
+                        "value": "1715.0 mm"
+                    },
+                    {
+                        "title": "Length",
+                        "key": "length",
+                        "status": 2,
+                        "value": "4570.0 mm"
+                    },
+                    {
+                        "title": "Width",
+                        "key": "width",
+                        "status": 2,
+                        "value": "1845.0 mm"
+                    },
+                    {
+                        "title": "Ground Clearance",
+                        "key": "groundClearance",
+                        "status": 2,
+                        "value": "176.0 mm"
+                    },
+                    {
+                        "title": "Kerb Weight",
+                        "key": "kerbWeight",
+                        "status": 2,
+                        "value": "1520.0"
+                    },
+                    {
+                        "title": "Towing Capacity (braked)",
+                        "key": "brakedTowingCapacity",
+                        "status": 2,
+                        "value": "800.0 kg"
+                    },
+                    {
+                        "title": "Towing Capacity (unbraked)",
+                        "key": "unbrakedTowingCapacity",
+                        "status": 2,
+                        "value": "750.0 kg"
+                    },
+                    {
+                        "title": "Payload",
+                        "key": "payload",
+                        "status": 2,
+                        "value": "480.0 kg"
+                    },
+                    {
+                        "title": "Bootspace (Seats up)",
+                        "key": "bootSpaceSeatsUp",
+                        "status": 2,
+                        "value": "577 L"
+                    },
+                    {
+                        "title": "Bootspace (Seats down)",
+                        "key": "bootSpaceSeatsDown",
+                        "status": 2,
+                        "value": "1655 L"
+                    }
+                ]
+            }
+        ],
+        "summary": [
+            {
+                "title": "Body",
+                "key": "body",
+                "status": 2,
+                "value": "SUV"
+            },
+            {
+                "title": "Fuel Consumption",
+                "key": "cityConsumption",
+                "status": 2,
+                "value": "7.4 L/100 km"
+            },
+            {
+                "title": "Doors",
+                "key": "numberOfDoors",
+                "status": 2,
+                "value": "4"
+            },
+            {
+                "title": "Seats",
+                "key": "passengerSeats",
+                "status": 2,
+                "value": "5"
+            },
+            {
+                "title": "ANCAP Rating",
+                "key": "ancap",
+                "status": 2,
+                "value": "5.0"
+            },
+            {
+                "title": "Compliance date",
+                "key": "complianceDate",
+                "toolTipText": "Date this car met Australian Design Rules",
+                "status": 2,
+                "value": "10/2016"
+            },
+            {
+                "title": "Build year",
+                "key": "buildYear",
+                "toolTipText": "Year this car was built",
+                "status": 2,
+                "value": "2016"
+            },
+            {
+                "title": "Number of keys",
+                "key": "numberOfKeys",
+                "status": 2,
+                "value": "2"
+            },
+            {
+                "title": "Model year",
+                "key": "modelYear",
+                "toolTipText": "Model Year (MY) is the manufacturer's marketing year for this model",
+                "status": 2,
+                "value": "2016"
+            },
+            {
+                "title": "Engine",
+                "key": "engine",
+                "status": 2,
+                "value": "4cyl 2L Inline 4 Petrol"
+            },
+            {
+                "title": "Boot Space",
+                "key": "bootSpaceSeatsUp",
+                "status": 2,
+                "value": "577 L"
+            }
+        ],
+        "ppsrReportLink": "https://au-ppsr.s3.ap-south-1.amazonaws.com/prod/17066828646092212745358263488.pdf",
+        "serviceHistory": [
+            {
+                "serviceDate": "07/02/2024",
+                "status": "DONE",
+                "serviceCenterAddress": "CARS24 Service Centre",
+                "preService": null,
+                "postService": {
+                    "odo": "77,961"
+                }
+            },
+            {
+                "serviceDate": "14/07/2022",
+                "status": "DONE",
+                "serviceCenterAddress": "CARS24 Service Centre",
+                "preService": null,
+                "postService": {
+                    "odo": "68,246"
+                }
+            },
+            {
+                "serviceDate": "01/04/2019",
+                "status": "DONE",
+                "serviceCenterAddress": "Toyota",
+                "preService": null,
+                "postService": {
+                    "odo": "39,638"
+                }
+            },
+            {
+                "serviceDate": "10/09/2018",
+                "status": "DONE",
+                "serviceCenterAddress": "Toyota",
+                "preService": null,
+                "postService": {
+                    "odo": "30,044"
+                }
+            },
+            {
+                "serviceDate": "05/03/2018",
+                "status": "DONE",
+                "serviceCenterAddress": "Toyota",
+                "preService": null,
+                "postService": {
+                    "odo": "21,443"
+                }
+            },
+            {
+                "serviceDate": "31/07/2017",
+                "status": "DONE",
+                "serviceCenterAddress": "Toyota",
+                "preService": null,
+                "postService": {
+                    "odo": "11,496"
+                }
+            },
+            {
+                "serviceDate": "20/01/2017",
+                "status": "DONE",
+                "serviceCenterAddress": "Toyota",
+                "preService": null,
+                "postService": {
+                    "odo": "3,418"
+                }
+            }
+        ],
+        "serviceHistoryText": "Serviced for next 10k kms",
+        "reserved": true,
+        "manufactureWarrantyEndDate": "01/10/2019",
+        "estimatedManufactureWarrantyEndDate": "01/10/2019",
+        "displayTestDriveFlow": false,
+        "wearAndTearGuideLink": "https://fastly-production.24c.in/au/pdf/inspection_report.pdf",
+        "displayBrakeSafetySection": false,
+        "premiumFeatures": {
+            "title": "Premium & Installed Features",
+            "key": "premiumFeatures",
+            "status": 4,
+            "child": [
+                {
+                    "title": "Cruise Control"
+                },
+                {
+                    "title": "Reversing Camera"
+                }
+            ]
+        },
+        "dapPriceEnabled": false,
+        "similarModelCars": [
+            {
+                "appointmentId": "12654262436096",
+                "year": "2014",
+                "modelYear": "2014",
+                "egc": 20990.0,
+                "estimatedPrice": 20990.0,
+                "tradeInAmount": null,
+                "personalised": false,
+                "emiDetails": {
+                    "emi": 477.0,
+                    "interestRate": 9.99,
+                    "balloonPercentage": 0.0,
+                    "defaultDownPayment": 500,
+                    "lenderFee": 1489.0,
+                    "comparisonRate": 12.75,
+                    "emiPerWeek": 110.0,
+                    "maxDownPayment": 15990.0,
+                    "lenderMonthlyFee": 9.9,
+                    "maxLoanAmount": 100000,
+                    "minDownPayment": 500,
+                    "tenure": 5
+                },
+                "expressDelivery": null,
+                "cityCode": "AU_VIC_MEL",
+                "stateCode": "AU_VIC",
+                "state": "Victoria",
+                "make": "Toyota",
+                "model": "RAV4",
+                "variant": "Gxl (4x4)",
+                "trim": null,
+                "specs": null,
+                "engineSize": null,
+                "driveType": "All Wheel Drive",
+                "noOfCylinders": null,
+                "turbochargerSuperchargerAvailable": false,
+                "booked": false,
+                "listingActive": true,
+                "city": "Melbourne",
+                "promotion": "Off sale",
+                "vin": "JTMDFREVX0D085379",
+                "kbbAskingPrice": 22195,
+                "kbbAskingPriceRangeMin": 20804,
+                "kbbAskingPriceRangeMax": 23587,
+                "kbbValueProvidedOn": "02/19/2024",
+                "threeSixtyViewUrl": "https://au.viewer.cars24.com?id=65ce8725b6f54e84fb6d53d5",
+                "threeSixtyViewAvailable": true,
+                "mediaSource": "helloAR",
+                "kerbWeight": 1630.0,
+                "mainImage": {
+                    "path": "hello-ar/dev/uploads/7622c1fe-a661-45a0-9ef0-2f916c32089e/fb711725-181b-45d0-9844-74312896bdd3/exterior/33.jpg",
+                    "label": "Right Front Diagonal"
+                },
+                "gst": 1908.1818181818198,
+                "body": "SUV",
+                "comingSoon": false,
+                "reserved": false,
+                "dapPriceEnabled": false,
+                "offer": null,
+                "exteriorImages": null,
+                "interiorImages": null,
+                "imperfectionImages": null,
+                "vehicleFeatures": null,
+                "vehicleSpecifications": null,
+                "dapPrice": null,
+                "inspectionObject": null,
+                "price": 20990.0,
+                "odometerReading": 145883,
+                "ownerNumber": null,
+                "transmissionType": "Automatic",
+                "fuelType": "Petrol",
+                "seats": "5"
+            },
+            {
+                "appointmentId": "12495733670016",
+                "year": "2017",
+                "modelYear": "2017",
+                "egc": 22990.0,
+                "estimatedPrice": 22990.0,
+                "tradeInAmount": null,
+                "personalised": false,
+                "emiDetails": {
+                    "emi": 518.0,
+                    "interestRate": 9.89,
+                    "balloonPercentage": 0.0,
+                    "defaultDownPayment": 500,
+                    "lenderFee": 1489.0,
+                    "comparisonRate": 12.65,
+                    "emiPerWeek": 119.0,
+                    "maxDownPayment": 17990.0,
+                    "lenderMonthlyFee": 9.9,
+                    "maxLoanAmount": 100000,
+                    "minDownPayment": 500,
+                    "tenure": 5
+                },
+                "expressDelivery": null,
+                "cityCode": "AU_VIC_MEL",
+                "stateCode": "AU_VIC",
+                "state": "Victoria",
+                "make": "Toyota",
+                "model": "RAV4",
+                "variant": "Gx (2wd)",
+                "trim": null,
+                "specs": null,
+                "engineSize": null,
+                "driveType": "Front Wheel Drive",
+                "noOfCylinders": null,
+                "turbochargerSuperchargerAvailable": false,
+                "booked": false,
+                "listingActive": true,
+                "city": "Melbourne",
+                "promotion": "Off sale",
+                "vin": "JTMZDREV80J130297",
+                "kbbAskingPrice": 23396,
+                "kbbAskingPriceRangeMin": 21960,
+                "kbbAskingPriceRangeMax": 24833,
+                "kbbValueProvidedOn": "02/19/2024",
+                "threeSixtyViewUrl": "https://au.viewer.cars24.com?id=65ced5e7ffb81e41f548d3ed",
+                "threeSixtyViewAvailable": true,
+                "mediaSource": "helloAR",
+                "kerbWeight": 1520.0,
+                "mainImage": {
+                    "path": "hello-ar/dev/uploads/c6ea0f2f-ea8d-490b-935f-5e72072cd67f/c8ea9ef1-4c68-4bc7-8fbf-60e35407766c/exterior/33.jpg",
+                    "label": "Right Front Diagonal"
+                },
+                "gst": 2090.0,
+                "body": "SUV",
+                "comingSoon": false,
+                "reserved": false,
+                "dapPriceEnabled": false,
+                "offer": null,
+                "exteriorImages": null,
+                "interiorImages": null,
+                "imperfectionImages": null,
+                "vehicleFeatures": null,
+                "vehicleSpecifications": null,
+                "dapPrice": null,
+                "inspectionObject": null,
+                "price": 22990.0,
+                "odometerReading": 121686,
+                "ownerNumber": null,
+                "transmissionType": "Automatic",
+                "fuelType": "Petrol",
+                "seats": "5"
+            },
+            {
+                "appointmentId": "11816428519744",
+                "year": "2015",
+                "modelYear": "2015",
+                "egc": 24690.0,
+                "estimatedPrice": 24690.0,
+                "tradeInAmount": null,
+                "personalised": false,
+                "emiDetails": {
+                    "emi": 555.0,
+                    "interestRate": 9.99,
+                    "balloonPercentage": 0.0,
+                    "defaultDownPayment": 500,
+                    "lenderFee": 1489.0,
+                    "comparisonRate": 12.75,
+                    "emiPerWeek": 128.0,
+                    "maxDownPayment": 19690.0,
+                    "lenderMonthlyFee": 9.9,
+                    "maxLoanAmount": 100000,
+                    "minDownPayment": 500,
+                    "tenure": 5
+                },
+                "expressDelivery": null,
+                "cityCode": "AU_VIC_MEL",
+                "stateCode": "AU_VIC",
+                "state": "Victoria",
+                "make": "Toyota",
+                "model": "RAV4",
+                "variant": "Cruiser (4x4)",
+                "trim": null,
+                "specs": null,
+                "engineSize": null,
+                "driveType": "All Wheel Drive",
+                "noOfCylinders": null,
+                "turbochargerSuperchargerAvailable": false,
+                "booked": false,
+                "listingActive": true,
+                "city": "Melbourne",
+                "promotion": "Off sale",
+                "vin": "JTMDFREV50D158044",
+                "kbbAskingPrice": 27493,
+                "kbbAskingPriceRangeMin": 25916,
+                "kbbAskingPriceRangeMax": 29070,
+                "kbbValueProvidedOn": "02/20/2024",
+                "threeSixtyViewUrl": "https://au.viewer.cars24.com?id=6579247c2de7e35569c36cd5",
+                "threeSixtyViewAvailable": true,
+                "mediaSource": "helloAR",
+                "kerbWeight": 1630.0,
+                "mainImage": {
+                    "path": "hello-ar/dev/uploads/40f7a817-d685-41df-90b8-309ebc12da47/43658064-1a6b-4f16-9a12-584ca809c2c2/exterior/33.jpg",
+                    "label": "Right Front Diagonal"
+                },
+                "gst": 2244.545454545456,
+                "body": "SUV",
+                "comingSoon": false,
+                "reserved": false,
+                "dapPriceEnabled": false,
+                "offer": null,
+                "exteriorImages": null,
+                "interiorImages": null,
+                "imperfectionImages": null,
+                "vehicleFeatures": null,
+                "vehicleSpecifications": null,
+                "dapPrice": null,
+                "inspectionObject": null,
+                "price": 24690.0,
+                "odometerReading": 115034,
+                "ownerNumber": null,
+                "transmissionType": "Automatic",
+                "fuelType": "Petrol",
+                "seats": "5"
+            }
+        ],
+        "similarBudgetCars": [
+            {
+                "appointmentId": "11714722853952",
+                "year": "2017",
+                "modelYear": "2018",
+                "egc": 20090.0,
+                "estimatedPrice": 20090.0,
+                "tradeInAmount": null,
+                "personalised": false,
+                "emiDetails": {
+                    "emi": 457.0,
+                    "interestRate": 9.89,
+                    "balloonPercentage": 0.0,
+                    "defaultDownPayment": 500,
+                    "lenderFee": 1489.0,
+                    "comparisonRate": 12.65,
+                    "emiPerWeek": 105.0,
+                    "maxDownPayment": 15090.0,
+                    "lenderMonthlyFee": 9.9,
+                    "maxLoanAmount": 100000,
+                    "minDownPayment": 500,
+                    "tenure": 5
+                },
+                "expressDelivery": null,
+                "cityCode": "AU_VIC_MEL",
+                "stateCode": "AU_VIC",
+                "state": "Victoria",
+                "make": "Mitsubishi",
+                "model": "ASX",
+                "variant": "Ls (2wd)",
+                "trim": null,
+                "specs": null,
+                "engineSize": null,
+                "driveType": "Front Wheel Drive",
+                "noOfCylinders": null,
+                "turbochargerSuperchargerAvailable": false,
+                "booked": false,
+                "listingActive": true,
+                "city": "Melbourne",
+                "promotion": "Off sale",
+                "vin": "JMFXTGA2WJZ003008",
+                "kbbAskingPrice": 20481,
+                "kbbAskingPriceRangeMin": 19155,
+                "kbbAskingPriceRangeMax": 21806,
+                "kbbValueProvidedOn": "02/20/2024",
+                "threeSixtyViewUrl": "https://au.viewer.cars24.com?id=655599b9ac686c16d76070fd",
+                "threeSixtyViewAvailable": true,
+                "mediaSource": "helloAR",
+                "kerbWeight": 1375.0,
+                "mainImage": {
+                    "path": "hello-ar/dev/uploads/07b20dba-9d19-4971-a1e3-81da3274c180/8421babe-ebb0-41c6-9fbe-d8a7ef2a58a1/exterior/33.jpg",
+                    "label": "Right Front Diagonal"
+                },
+                "gst": 1826.363636363636,
+                "body": "SUV",
+                "comingSoon": false,
+                "reserved": false,
+                "dapPriceEnabled": false,
+                "offer": null,
+                "exteriorImages": null,
+                "interiorImages": null,
+                "imperfectionImages": null,
+                "vehicleFeatures": null,
+                "vehicleSpecifications": null,
+                "dapPrice": null,
+                "inspectionObject": null,
+                "price": 20090.0,
+                "odometerReading": 94863,
+                "ownerNumber": null,
+                "transmissionType": "Automatic",
+                "fuelType": "Petrol",
+                "seats": "5"
+            },
+            {
+                "appointmentId": "12291985063936",
+                "year": "2017",
+                "modelYear": "2018",
+                "egc": 20090.0,
+                "estimatedPrice": 20090.0,
+                "tradeInAmount": null,
+                "personalised": false,
+                "emiDetails": {
+                    "emi": 457.0,
+                    "interestRate": 9.89,
+                    "balloonPercentage": 0.0,
+                    "defaultDownPayment": 500,
+                    "lenderFee": 1489.0,
+                    "comparisonRate": 12.65,
+                    "emiPerWeek": 105.0,
+                    "maxDownPayment": 15090.0,
+                    "lenderMonthlyFee": 9.9,
+                    "maxLoanAmount": 100000,
+                    "minDownPayment": 500,
+                    "tenure": 5
+                },
+                "expressDelivery": null,
+                "cityCode": "AU_QLD_BNE",
+                "stateCode": "AU_QLD",
+                "state": "Queensland",
+                "make": "Hyundai",
+                "model": "Kona",
+                "variant": "Active (fwd)",
+                "trim": null,
+                "specs": null,
+                "engineSize": null,
+                "driveType": "Front Wheel Drive",
+                "noOfCylinders": null,
+                "turbochargerSuperchargerAvailable": false,
+                "booked": false,
+                "listingActive": true,
+                "city": "Brisbane",
+                "promotion": "Off sale",
+                "vin": "KMHK281AMJU061016",
+                "kbbAskingPrice": 18852,
+                "kbbAskingPriceRangeMin": 17559,
+                "kbbAskingPriceRangeMax": 20144,
+                "kbbValueProvidedOn": "02/20/2024",
+                "threeSixtyViewUrl": "https://au.viewer.cars24.com?id=65a9e95068a17b8177817fc3",
+                "threeSixtyViewAvailable": true,
+                "mediaSource": "helloAR",
+                "kerbWeight": 1383.0,
+                "mainImage": {
+                    "path": "hello-ar/dev/uploads/47d1e20e-c021-48b4-941e-4e8a6716d2ed/ddad319f-26df-4acd-bc08-d86c36faecf0/exterior/32.jpg",
+                    "label": "Right Front Diagonal"
+                },
+                "gst": 1826.363636363636,
+                "body": "SUV",
+                "comingSoon": false,
+                "reserved": false,
+                "dapPriceEnabled": false,
+                "offer": null,
+                "exteriorImages": null,
+                "interiorImages": null,
+                "imperfectionImages": null,
+                "vehicleFeatures": null,
+                "vehicleSpecifications": null,
+                "dapPrice": null,
+                "inspectionObject": null,
+                "price": 20090.0,
+                "odometerReading": 93030,
+                "ownerNumber": null,
+                "transmissionType": "Automatic",
+                "fuelType": "Petrol",
+                "seats": "5"
+            },
+            {
+                "appointmentId": "12168436008576",
+                "year": "2015",
+                "modelYear": "2016",
+                "egc": 20290.0,
+                "estimatedPrice": 20290.0,
+                "tradeInAmount": null,
+                "personalised": false,
+                "emiDetails": {
+                    "emi": 462.0,
+                    "interestRate": 9.99,
+                    "balloonPercentage": 0.0,
+                    "defaultDownPayment": 500,
+                    "lenderFee": 1489.0,
+                    "comparisonRate": 12.75,
+                    "emiPerWeek": 106.0,
+                    "maxDownPayment": 15290.0,
+                    "lenderMonthlyFee": 9.9,
+                    "maxLoanAmount": 100000,
+                    "minDownPayment": 500,
+                    "tenure": 5
+                },
+                "expressDelivery": null,
+                "cityCode": "AU_VIC_MEL",
+                "stateCode": "AU_VIC",
+                "state": "Victoria",
+                "make": "Mitsubishi",
+                "model": "ASX",
+                "variant": "Ls (4wd)",
+                "trim": null,
+                "specs": null,
+                "engineSize": null,
+                "driveType": "Four Wheel Drive",
+                "noOfCylinders": null,
+                "turbochargerSuperchargerAvailable": false,
+                "booked": false,
+                "listingActive": true,
+                "city": "Melbourne",
+                "promotion": "Off sale",
+                "vin": "JMFXLGA8WFZC01717",
+                "kbbAskingPrice": 22569,
+                "kbbAskingPriceRangeMin": 21163,
+                "kbbAskingPriceRangeMax": 23975,
+                "kbbValueProvidedOn": "02/20/2024",
+                "threeSixtyViewUrl": "https://au.viewer.cars24.com?id=658e0cd37d222e505a0f1ca2",
+                "threeSixtyViewAvailable": true,
+                "mediaSource": "helloAR",
+                "kerbWeight": 1440.0,
+                "mainImage": {
+                    "path": "hello-ar/dev/uploads/a4f17d36-768d-46a9-80af-7be200310848/a5e210b8-2b05-4fe9-b485-079cb876a2ff/exterior/32.jpg",
+                    "label": "Right Front Diagonal"
+                },
+                "gst": 1844.5454545454559,
+                "body": "SUV",
+                "comingSoon": false,
+                "reserved": false,
+                "dapPriceEnabled": false,
+                "offer": null,
+                "exteriorImages": null,
+                "interiorImages": null,
+                "imperfectionImages": null,
+                "vehicleFeatures": null,
+                "vehicleSpecifications": null,
+                "dapPrice": null,
+                "inspectionObject": null,
+                "price": 20290.0,
+                "odometerReading": 104498,
+                "ownerNumber": null,
+                "transmissionType": "Automatic",
+                "fuelType": "Diesel",
+                "seats": "5"
+            }
+        ],
+        "moreCars": [
+            {
+                "title": "More Toyota cars for you",
+                "image": "/brand_search_logo/toyota.png",
+                "availableCars": "150 cars available",
+                "filter": {
+                    "name": "make",
+                    "value": "Toyota",
+                    "filterType": "sf",
+                    "from": null,
+                    "to": null
+                },
+                "seoPath": "https://www.cars24.com/au/buy-used-Toyota"
+            },
+            {
+                "title": "More Toyota RAV4 cars for you",
+                "image": "/brand_plus/toyota.png",
+                "availableCars": "14 cars available",
+                "filter": {
+                    "name": "make",
+                    "value": "make:Toyota-sub-model:RAV4",
+                    "filterType": "sf",
+                    "from": null,
+                    "to": null
+                },
+                "seoPath": "https://www.cars24.com/au/buy-used-Toyota-RAV4"
+            },
+            {
+                "title": "More Toyota cars for you in Melbourne",
+                "image": "/icons/b2c/more-cars/city.png",
+                "availableCars": "84 cars available",
+                "filter": {
+                    "name": "makeCityName",
+                    "value": "makeCityName:Toyota-sub-city:Melbourne",
+                    "filterType": "sf",
+                    "from": null,
+                    "to": null
+                },
+                "seoPath": "https://www.cars24.com/au/buy-used-Toyota-cars-in-Melbourne"
+            },
+            {
+                "title": "More SUV cars for you",
+                "image": "/icons/filter/body_types/suv.png",
+                "availableCars": "468 cars available",
+                "filter": {
+                    "name": "bodyType",
+                    "value": "SUV",
+                    "filterType": "sf",
+                    "from": null,
+                    "to": null
+                },
+                "seoPath": "https://www.cars24.com/au/buy-used-SUV"
+            },
+            {
+                "title": "More Petrol cars for you",
+                "image": "/icons/b2c/more-cars/petrol.png",
+                "availableCars": "659 cars available",
+                "filter": {
+                    "name": "fuelType",
+                    "value": "Petrol",
+                    "filterType": "sf",
+                    "from": null,
+                    "to": null
+                },
+                "seoPath": "https://www.cars24.com/au/buy-used-Petrol"
+            },
+            {
+                "title": "More cars under $30,000",
+                "image": "/icons/b2c/more-cars/money.svg",
+                "availableCars": "587 cars available",
+                "filter": {
+                    "name": "quotedPrice",
+                    "value": "quotedPrice:0;30000",
+                    "filterType": "rf",
+                    "from": 0.0,
+                    "to": 30000.0
+                },
+                "seoPath": "https://www.cars24.com/au/buy-used-under-30000-aud"
+            }
+        ],
+        "buyWithConfidence": [
+            {
+                "text": "Loan eligibility in 2 mins",
+                "hyperLink": null,
+                "image": "/icons/b2c/buyer-confidence/two-minute-finance-v3.png",
+                "id": "finance_pre_approval"
+            },
+            {
+                "text": "7-Day return & 100% refund",
+                "hyperLink": null,
+                "image": "/icons/b2c/buyer-confidence/seven-day-return-v3.png",
+                "id": "x_days_return"
+            },
+            {
+                "text": "Quality service guarantee",
+                "hyperLink": null,
+                "image": "/icons/b2c/buyer-confidence/car-quality-v3.png",
+                "id": "quality_service_guarantee"
+            },
+            {
+                "text": "Best value for money",
+                "hyperLink": null,
+                "image": "/icons/b2c/buyer-confidence/best-value-v3.png",
+                "id": "best_value_for_money"
+            },
+            {
+                "text": "3-Months Warranty",
+                "hyperLink": "https://www.cars24.com/au/cars24cover/",
+                "image": "/icons/b2c/buyer-confidence/three-month-warranty-v3.png",
+                "id": "x_months_warranty"
+            },
+            {
+                "text": "900+ Cars ready and waiting",
+                "hyperLink": null,
+                "image": "/icons/b2c/buyer-confidence/choose-from-v3.png",
+                "id": "x_cars_ready_and_waiting"
+            }
+        ],
+        "price": 0.0,
+        "odometerReading": 77962
+    },
+    "config": {
+        "imageHost": "https://fastly-production.24c.in/",
+        "brandImageHost": "https://fastly-production.24c.in/au/"
+    },
+    "personalised": false,
+    "ipDetectedState": "Haryana",
+    "eligibleForExtendedWarranty": true,
+    "oldTimerBanner": "au/icons/b2c/cdp/oldtimer-app.png",
+    "priceBenefits": {
+        "totalAmountInfo": {
+            "label": "Total Benefits",
+            "amount": 759.29
+        },
+        "benefitDetails": [
+            {
+                "key": "3_MONTH_WARRANTY",
+                "label": "3-Months warranty",
+                "amount": 559.29,
+                "included": true,
+                "points": [
+                    "Comprehensive coverage",
+                    "Mechanical & electrical parts, labour cost"
+                ]
+            },
+            {
+                "key": "SERVICES_AND_CLEANED",
+                "label": "Serviced & cleaned",
+                "amount": 200.0,
+                "included": true,
+                "points": [
+                    
+                ]
+            },
+            {
+                "key": "3_MONTH_ROADSIDE_ASSISTANT",
+                "label": "3-Months roadside assistance",
+                "amount": null,
+                "included": true,
+                "points": [
+                    
+                ]
+            },
+            {
+                "key": "7_DAYS_RETURN",
+                "label": "7-Day Return",
+                "amount": null,
+                "included": true,
+                "points": [
+                    "With 100% money back guarantee"
+                ]
+            }
+        ]
+    }
+}

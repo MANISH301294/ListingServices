@@ -1,2 +1,15 @@
-package pojo.Vehicle;public class GalleryV2 {
+package pojo.Vehicle;
+
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
+import lombok.Getter;
+import lombok.Setter;
+
+@Getter
+@Setter
+@JsonIgnoreProperties(ignoreUnknown = true)
+public class GalleryV2 {
+    private String path;
+    private String label;
+
+
 }
